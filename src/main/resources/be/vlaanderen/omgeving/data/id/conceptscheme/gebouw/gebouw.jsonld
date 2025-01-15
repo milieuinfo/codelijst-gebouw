@@ -1,0 +1,884 @@
+{
+    "@context": {
+        "sparql-service-description-graph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#graph",
+            "@type": "@id"
+        },
+        "defaultGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultGraph",
+            "@type": "@id"
+        },
+        "collections": {
+            "@type": "@id",
+            "@reverse": "member"
+        },
+        "id": "@id",
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "source": {
+            "@id": "http://purl.org/dc/terms/source",
+            "@type": "@id"
+        },
+        "sparql-service-description-name": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#name",
+            "@type": "@id"
+        },
+        "identifier": {
+            "@id": "http://purl.org/dc/terms/identifier",
+            "@type": "@id"
+        },
+        "hasVersion": {
+            "@id": "http://purl.org/dc/terms/hasVersion",
+            "@type": "@id"
+        },
+        "isVersionOf": {
+            "@id": "http://purl.org/dc/terms/isVersionOf",
+            "@type": "@id"
+        },
+        "label": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "@language": "nl"
+        },
+        "distribution": {
+            "@id": "http://www.w3.org/ns/dcat#distribution",
+            "@type": "@id"
+        },
+        "alternative": {
+            "@id": "http://purl.org/dc/terms/alternative",
+            "@language": "nl"
+        },
+        "description": {
+            "@id": "http://purl.org/dc/terms/description",
+            "@language": "nl"
+        },
+        "spatial": {
+            "@id": "http://purl.org/dc/terms/spatial",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "title": {
+            "@id": "http://purl.org/dc/terms/title",
+            "@language": "nl"
+        },
+        "landingPage": {
+            "@id": "http://www.w3.org/ns/dcat#landingPage",
+            "@type": "@id"
+        },
+        "rightsHolder": {
+            "@id": "http://purl.org/dc/terms/rightsHolder",
+            "@type": "@id"
+        },
+        "language": "http://publications.europa.eu/resource/authority/language/",
+        "accrualPeriodicity": {
+            "@id": "http://purl.org/dc/terms/accrualPeriodicity",
+            "@type": "@id"
+        },
+        "publisher": {
+            "@id": "http://purl.org/dc/terms/publisher",
+            "@type": "@id"
+        },
+        "dct.language": {
+            "@id": "http://purl.org/dc/terms/language",
+            "@type": "@id"
+        },
+        "contactPoint": {
+            "@id": "http://www.w3.org/ns/dcat#contactPoint",
+            "@type": "@id"
+        },
+        "temporal": {
+            "@id": "http://purl.org/dc/terms/temporal",
+            "@type": "@id"
+        },
+        "issued": {
+            "@id": "http://purl.org/dc/terms/issued",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "accessRights": {
+            "@id": "http://purl.org/dc/terms/accessRights",
+            "@type": "@id"
+        },
+        "license": {
+            "@id": "http://purl.org/dc/terms/license",
+            "@type": "@id"
+        },
+        "accessURL": {
+            "@id": "http://www.w3.org/ns/dcat#accessURL",
+            "@type": "@id"
+        },
+        "compressFormat": {
+            "@id": "http://www.w3.org/ns/dcat#compressFormat",
+            "@type": "@id"
+        },
+        "downloadURL": {
+            "@id": "http://www.w3.org/ns/dcat#downloadURL",
+            "@type": "@id"
+        },
+        "mediaType": {
+            "@id": "http://www.w3.org/ns/dcat#mediaType",
+            "@type": "@id"
+        },
+        "format": {
+            "@id": "http://purl.org/dc/terms/format",
+            "@type": "@id"
+        },
+        "versionInfo": {
+            "@id": "http://spdx.org/rdf/terms#versionInfo"
+        },
+        "packageName": {
+            "@id": "http://spdx.org/rdf/terms#packageName"
+        },
+        "packageFileName": {
+            "@id": "http://spdx.org/rdf/terms#packageFileName"
+        },
+        "downloadLocation": {
+            "@id": "http://spdx.org/rdf/terms#downloadLocation",
+            "@type": "@id"
+        },
+        "relationshipType_packageOf": {
+            "@id": "http://spdx.org/rdf/terms#relationshipType_packageOf",
+            "@type": "@id"
+        },
+        "availableGraphs": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#availableGraphs",
+            "@type": "@id"
+        },
+        "resultFormat": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#resultFormat",
+            "@type": "@id"
+        },
+        "feature": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#feature",
+            "@type": "@id"
+        },
+        "supportedLanguage": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#supportedLanguage",
+            "@type": "@id"
+        },
+        "url": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#url",
+            "@type": "@id"
+        },
+        "comment": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "@language": "nl"
+        },
+        "defaultDataset": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultDataset",
+            "@type": "@id"
+        },
+        "endpoint": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#endpoint",
+            "@type": "@id"
+        },
+        "namedGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#namedGraph",
+            "@type": "@id"
+        },
+        "homepage": {
+            "@id": "http://xmlns.com/foaf/0.1/homepage",
+            "@type": "@id"
+        },
+        "service": {
+            "@id": "http://www.w3.org/ns/dcat#service",
+            "@type": "@id"
+        },
+        "rootResource": {
+            "@id": "http://rdfs.org/ns/void#rootResource",
+            "@type": "@id"
+        },
+        "dataset": {
+            "@id": "http://www.w3.org/ns/dcat#dataset",
+            "@type": "@id"
+        },
+        "servesDataset": {
+            "@id": "http://www.w3.org/ns/dcat#servesDataset",
+            "@type": "@id"
+        },
+        "endpointDescription": {
+            "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+            "@type": "@id"
+        },
+        "endpointURL": {
+            "@id": "http://www.w3.org/ns/dcat#endpointURL",
+            "@type": "@id"
+        },
+        "conformsTo": {
+            "@id": "http://purl.org/dc/terms/conformsTo",
+            "@type": "@id"
+        },
+        "dc.identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "dc.language": {
+            "@id": "http://purl.org/dc/elements/1.1/language",
+            "@language": "nl"
+        },
+        "dc.source": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "version": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "name": {
+            "@id": "http://spdx.org/rdf/terms#name"
+        },
+        "seeAlso": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id"
+        },
+        "uri": {
+            "@id": "@id",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "altLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "@language": "nl"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "casNumber": {
+            "@id": "http://dbpedia.org/ontology/casNumber"
+        },
+        "references": {
+            "@id": "http://purl.org/dc/terms/references",
+            "@type": "@id"
+        },
+        "isReferencedBy": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy",
+            "@type": "@id"
+        },
+        "relation": {
+            "@id": "http://purl.org/dc/terms/relation",
+            "@type": "@id"
+        },
+        "graph": {
+            "@id": "@graph"
+        },
+        "broaderTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+            "@type": "@id"
+        },
+        "broadMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+            "@type": "@id"
+        },
+        "closeMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+            "@type": "@id"
+        },
+        "exactMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+            "@type": "@id"
+        },
+        "mappingRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+            "@type": "@id"
+        },
+        "broader": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broader",
+            "@type": "@id"
+        },
+        "narrower": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+            "@type": "@id"
+        },
+        "narrowerTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+            "@type": "@id"
+        },
+        "narrowMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+            "@type": "@id"
+        },
+        "semanticRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+            "@type": "@id"
+        },
+        "belongsTo": {
+            "@id": "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
+            "@type": "@id"
+        },
+        "related": {
+            "@id": "http://www.w3.org/2004/02/skos/core#related",
+            "@type": "@id"
+        },
+        "dc_elements_identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "concept": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/",
+        "collectie": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/",
+        "access_right": "http://publications.europa.eu/resource/authority/access-right/",
+        "adms": "http://www.w3.org/ns/adms#",
+        "assettype": "http://purl.org/adms/assettype/",
+        "chemische_stof": "https://data.omgeving.vlaanderen.be/id/concept/chemische_stof/",
+        "compound": "https://pubchem.ncbi.nlm.nih.gov/compound/",
+        "conceptscheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/",
+        "country": "http://publications.europa.eu/resource/authority/country/",
+        "datasets": "https://datasets.omgeving.vlaanderen.be/",
+        "datatheme_be": "http://vocab.belgif.be/auth/datatheme/",
+        "datatheme_eu": "http://publications.europa.eu/resource/authority/data-theme/",
+        "dbo": "http://dbpedia.org/ontology/",
+        "dcat": "http://www.w3.org/ns/dcat#",
+        "dc": "http://purl.org/dc/elements/1.1/",
+        "dcterms": "http://purl.org/dc/terms/",
+        "dct": "http://purl.org/dc/terms/",
+        "eurovoc": "http://eurovoc.europa.eu/",
+        "file_type": "http://publications.europa.eu/resource/authority/file-type/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "formats": "http://www.w3.org/ns/formats/",
+        "frequency": "http://publications.europa.eu/resource/authority/frequency/",
+        "gemet": "http://www.eionet.europa.eu/gemet/concept/",
+        "licence": "http://data.vlaanderen.be/id/licentie/modellicentie-gratis-hergebruik/",
+        "gebouw": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/",
+        "metadata": "https://data.omgeving.vlaanderen.be/ns/metadata#",
+        "omg_catalog": "https://data.omgeving.vlaanderen.be/id/catalog/",
+        "omg_catalog_doc": "https://data.omgeving.vlaanderen.be/doc/catalog/",
+        "omg_collection": "https://data.omgeving.vlaanderen.be/id/collection/",
+        "omg_dataservice": "https://data.omgeving.vlaanderen.be/id/dataservice/",
+        "omg_dataset_doc": "https://data.omgeving.vlaanderen.be/doc/dataset/",
+        "omg_dataset": "https://data.omgeving.vlaanderen.be/id/dataset/",
+        "omg_distribution_doc": "https://data.omgeving.vlaanderen.be/doc/distribution/",
+        "omg_distribution": "https://data.omgeving.vlaanderen.be/id/distribution/",
+        "omg_graphcollection": "https://data.omgeving.vlaanderen.be/id/graphcollection/",
+        "omg_graph": "https://data.omgeving.vlaanderen.be/id/graph/",
+        "omg_id": "https://data.omgeving.vlaanderen.be/id/",
+        "omg_named_graph": "https://data.omgeving.vlaanderen.be/id/namedgraph/",
+        "omg_ontology": "https://data.omgeving.vlaanderen.be/id/ontology/",
+        "omg_package": "https://data.omgeving.vlaanderen.be/id/package/",
+        "omg_periodoftime": "https://data.omgeving.vlaanderen.be/id/periodoftime/",
+        "omg_service": "https://data.omgeving.vlaanderen.be/id/service/",
+        "omg_vcard": "https://data.omgeving.vlaanderen.be/id/vcard/",
+        "ovo": "http://data.vlaanderen.be/id/organisatie/",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "repo": "https://repo.omgeving.vlaanderen.be/artifactory/release/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "sd": "http://www.w3.org/ns/sparql-service-description#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "spdx": "http://spdx.org/rdf/terms#",
+        "ssd": "http://www.w3.org/ns/sparql-service-description#",
+        "thema": "http://www.eionet.europa.eu/gemet/theme/",
+        "ts": "http://www.w3.org/ns/formats/",
+        "vcard": "http://www.w3.org/2006/vcard/ns#",
+        "void": "http://rdfs.org/ns/void#",
+        "wise": "http://dd.eionet.europa.eu/vocabulary/wise/ObservedProperty/",
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@base": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/"
+    },
+    "graph": [
+        {
+            "id": "gemet:1029",
+            "type": "skos:Concept",
+            "closeMatch": [
+                "gemet:1029",
+                "gebouw:gebouw"
+            ],
+            "exactMatch": [
+                "gemet:1029",
+                "gebouw:gebouw"
+            ],
+            "mappingRelation": [
+                "gemet:1029",
+                "gebouw:gebouw"
+            ],
+            "semanticRelation": [
+                "gemet:1029",
+                "gebouw:gebouw"
+            ]
+        },
+        {
+            "id": "gemet:1033",
+            "type": "skos:Concept",
+            "closeMatch": [
+                "gemet:1033",
+                "gebouw:gebouwonderdeel"
+            ],
+            "exactMatch": [
+                "gemet:1033",
+                "gebouw:gebouwonderdeel"
+            ],
+            "mappingRelation": [
+                "gemet:1033",
+                "gebouw:gebouwonderdeel"
+            ],
+            "semanticRelation": [
+                "gemet:1033",
+                "gebouw:gebouwonderdeel"
+            ]
+        },
+        {
+            "id": "gemet:1355",
+            "type": "skos:Concept",
+            "closeMatch": [
+                "gemet:1355",
+                "gebouw:schoorsteen"
+            ],
+            "exactMatch": [
+                "gemet:1355",
+                "gebouw:schoorsteen"
+            ],
+            "mappingRelation": [
+                "gemet:1355",
+                "gebouw:schoorsteen"
+            ],
+            "semanticRelation": [
+                "gemet:1355",
+                "gebouw:schoorsteen"
+            ]
+        },
+        {
+            "id": "gemet:9023",
+            "type": "skos:Concept",
+            "closeMatch": [
+                "gemet:9023",
+                "gebouw:muur"
+            ],
+            "exactMatch": [
+                "gemet:9023",
+                "gebouw:muur"
+            ],
+            "mappingRelation": [
+                "gemet:9023",
+                "gebouw:muur"
+            ],
+            "semanticRelation": [
+                "gemet:9023",
+                "gebouw:muur"
+            ]
+        },
+        {
+            "id": "collectie:verwaarlozing",
+            "type": "skos:Collection",
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "member": [
+                "gebouw:schoorsteen",
+                "gebouw:buitenmuur",
+                "gebouw:buitentimmerwerk",
+                "gebouw:dakbedekking",
+                "gebouw:dakgebinte",
+                "gebouw:dakgoot",
+                "gebouw:kroonlijst",
+                "gebouw:lift",
+                "gebouw:trap"
+            ],
+            "notation": "co_gebouw",
+            "note": "TODO",
+            "prefLabel": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand.",
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:buitenmuur",
+            "type": "skos:Concept",
+            "broader": "gebouw:muur",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:muur"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "note": "TODO",
+            "prefLabel": "buitenmuur",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:muur"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:buitentimmerwerk",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouwonderdeel",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "note": "TODO",
+            "prefLabel": "buitentimmerwerk",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:dak",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouwonderdeel",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "narrower": [
+                "gebouw:dakbedekking",
+                "gebouw:dakgebinte",
+                "gebouw:dakgoot"
+            ],
+            "narrowerTransitive": [
+                "gebouw:dakbedekking",
+                "gebouw:dakgebinte",
+                "gebouw:dakgoot"
+            ],
+            "note": "TODO",
+            "prefLabel": "dak",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:dakbedekking",
+                "gebouw:dakgebinte",
+                "gebouw:dakgoot"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:dakbedekking",
+            "type": "skos:Concept",
+            "broader": "gebouw:dak",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:dak"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "note": "TODO",
+            "prefLabel": "dakbedekking",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:dak"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:dakgebinte",
+            "type": "skos:Concept",
+            "broader": "gebouw:dak",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:dak"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "note": "TODO",
+            "prefLabel": "dakgebinte",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:dak"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:dakgoot",
+            "type": "skos:Concept",
+            "broader": "gebouw:dak",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:dak"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "note": "TODO",
+            "prefLabel": "dakgoot",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:dak"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:gebouw",
+            "type": "skos:Concept",
+            "closeMatch": [
+                "gemet:1029",
+                "gebouw:gebouw"
+            ],
+            "definition": "TODO",
+            "exactMatch": [
+                "gemet:1029",
+                "gebouw:gebouw"
+            ],
+            "inScheme": "conceptscheme:gebouw",
+            "mappingRelation": [
+                "gemet:1029",
+                "gebouw:gebouw"
+            ],
+            "narrower": "gebouw:gebouwonderdeel",
+            "narrowerTransitive": [
+                "gebouw:gebouwonderdeel",
+                "gebouw:schoorsteen",
+                "gebouw:muur",
+                "gebouw:buitenmuur",
+                "gebouw:buitentimmerwerk",
+                "gebouw:dakbedekking",
+                "gebouw:dakgebinte",
+                "gebouw:dakgoot",
+                "gebouw:kroonlijst",
+                "gebouw:lift",
+                "gebouw:trap",
+                "gebouw:dak"
+            ],
+            "note": "TODO",
+            "prefLabel": "gebouw",
+            "semanticRelation": [
+                "gemet:1029",
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gebouw:schoorsteen",
+                "gebouw:muur",
+                "gebouw:buitenmuur",
+                "gebouw:buitentimmerwerk",
+                "gebouw:dakbedekking",
+                "gebouw:dakgebinte",
+                "gebouw:dakgoot",
+                "gebouw:kroonlijst",
+                "gebouw:lift",
+                "gebouw:trap",
+                "gebouw:dak"
+            ],
+            "topConceptOf": "conceptscheme:gebouw",
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:gebouwonderdeel",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouw",
+            "broaderTransitive": "gebouw:gebouw",
+            "closeMatch": [
+                "gemet:1033",
+                "gebouw:gebouwonderdeel"
+            ],
+            "definition": "TODO",
+            "exactMatch": [
+                "gemet:1033",
+                "gebouw:gebouwonderdeel"
+            ],
+            "inScheme": "conceptscheme:gebouw",
+            "mappingRelation": [
+                "gemet:1033",
+                "gebouw:gebouwonderdeel"
+            ],
+            "narrower": [
+                "gebouw:schoorsteen",
+                "gebouw:muur",
+                "gebouw:buitentimmerwerk",
+                "gebouw:kroonlijst",
+                "gebouw:lift",
+                "gebouw:trap",
+                "gebouw:dak"
+            ],
+            "narrowerTransitive": [
+                "gebouw:schoorsteen",
+                "gebouw:muur",
+                "gebouw:buitenmuur",
+                "gebouw:buitentimmerwerk",
+                "gebouw:dakbedekking",
+                "gebouw:dakgebinte",
+                "gebouw:dakgoot",
+                "gebouw:kroonlijst",
+                "gebouw:lift",
+                "gebouw:trap",
+                "gebouw:dak"
+            ],
+            "note": "TODO",
+            "prefLabel": "gebouwonderdeel",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gemet:1033",
+                "gebouw:gebouwonderdeel",
+                "gebouw:schoorsteen",
+                "gebouw:muur",
+                "gebouw:buitenmuur",
+                "gebouw:buitentimmerwerk",
+                "gebouw:dakbedekking",
+                "gebouw:dakgebinte",
+                "gebouw:dakgoot",
+                "gebouw:kroonlijst",
+                "gebouw:lift",
+                "gebouw:trap",
+                "gebouw:dak"
+            ]
+        },
+        {
+            "id": "gebouw:kroonlijst",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouwonderdeel",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "note": "TODO",
+            "prefLabel": "kroonlijst",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:lift",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouwonderdeel",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "note": "TODO",
+            "prefLabel": "lift",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:muur",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouwonderdeel",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "closeMatch": [
+                "gemet:9023",
+                "gebouw:muur"
+            ],
+            "definition": "TODO",
+            "exactMatch": [
+                "gemet:9023",
+                "gebouw:muur"
+            ],
+            "inScheme": "conceptscheme:gebouw",
+            "mappingRelation": [
+                "gemet:9023",
+                "gebouw:muur"
+            ],
+            "narrower": "gebouw:buitenmuur",
+            "narrowerTransitive": "gebouw:buitenmuur",
+            "note": "TODO",
+            "prefLabel": "muur",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gemet:9023",
+                "gebouw:muur",
+                "gebouw:buitenmuur"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:schoorsteen",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouwonderdeel",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "closeMatch": [
+                "gemet:1355",
+                "gebouw:schoorsteen"
+            ],
+            "definition": "TODO",
+            "exactMatch": [
+                "gemet:1355",
+                "gebouw:schoorsteen"
+            ],
+            "inScheme": "conceptscheme:gebouw",
+            "mappingRelation": [
+                "gemet:1355",
+                "gebouw:schoorsteen"
+            ],
+            "note": "TODO",
+            "prefLabel": "schoorsteen",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel",
+                "gemet:1355",
+                "gebouw:schoorsteen"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:trap",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouwonderdeel",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "definition": "TODO",
+            "inScheme": "conceptscheme:gebouw",
+            "note": "TODO",
+            "prefLabel": "trap",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:gebouwonderdeel"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "conceptscheme:gebouw",
+            "type": "skos:ConceptScheme",
+            "belongsTo": "omg_dataset:codelijst-gebouw",
+            "definition": "TODO",
+            "hasTopConcept": "gebouw:gebouw",
+            "notation": "gebouw",
+            "note": "TODO",
+            "prefLabel": "Codelijst gebouwtype.",
+            "theme": "thema:5"
+        }
+    ]
+}

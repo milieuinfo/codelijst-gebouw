@@ -1,0 +1,16 @@
+uri,notation,prefLabel,definition,collections,inScheme,topConceptOf,broader,exactMatch,belongsTo,theme
+collectie:verwaarlozing,co_gebouw,Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand.,TODO,,conceptscheme:gebouw,,,,,thema:5
+conceptscheme:gebouw,gebouw,Codelijst gebouwtype.,TODO,,,,,,omg_dataset:codelijst-gebouw,thema:5
+gebouw:gebouw,,gebouw,TODO,,conceptscheme:gebouw,conceptscheme:gebouw,,gemet:1029,,thema:5
+gebouw:gebouwonderdeel,,gebouwonderdeel,TODO,,conceptscheme:gebouw,,gebouw:gebouw,gemet:1033,,
+gebouw:dak,,dak,TODO,,conceptscheme:gebouw,,gebouw:gebouwonderdeel,,,thema:5
+gebouw:muur,,muur,TODO,,conceptscheme:gebouw,,gebouw:gebouwonderdeel,gemet:9023,,thema:5
+gebouw:buitenmuur,,buitenmuur,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:muur,,,thema:5
+gebouw:schoorsteen,,schoorsteen,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:gebouwonderdeel,gemet:1355,,thema:5
+gebouw:dakbedekking,,dakbedekking,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:dak,,,thema:5
+gebouw:dakgebinte,,dakgebinte,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:dak,,,thema:5
+gebouw:buitentimmerwerk,,buitentimmerwerk,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:gebouwonderdeel,,,thema:5
+gebouw:kroonlijst,,kroonlijst,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:gebouwonderdeel,,,thema:5
+gebouw:dakgoot,,dakgoot,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:dak,,,thema:5
+gebouw:trap,,trap,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:gebouwonderdeel,,,thema:5
+gebouw:lift,,lift,TODO,collectie:verwaarlozing,conceptscheme:gebouw,,gebouw:gebouwonderdeel,,,thema:5
