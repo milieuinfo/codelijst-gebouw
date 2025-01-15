@@ -9,7 +9,7 @@ Lijst van dingen die met bouwen, bouwsector en gebouwen te maken hebben.
 
 ## Gebruik
 
-### Voeg een definitie van een nieuwe sommatie of groeperingtoe aan $PROJECT_HOME/src/source/codelijst-source.csv
+### Voeg een definitie van een nieuwe sommatie of groepering toe aan $PROJECT_HOME/src/source/codelijst-source.csv
 
 ### Voer het het transformatiescript uit:
 ```
