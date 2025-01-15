@@ -501,7 +501,7 @@
                 "gebouw:lift",
                 "gebouw:trap"
             ],
-            "notation": "co_gebouw",
+            "notation": "co_verwaarlozing",
             "note": "TODO",
             "prefLabel": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand.",
             "theme": "thema:5"
@@ -517,6 +517,7 @@
             ],
             "definition": "TODO",
             "inScheme": "conceptscheme:gebouw",
+            "notation": "buitenmuur",
             "note": "TODO",
             "prefLabel": "buitenmuur",
             "semanticRelation": [
@@ -536,6 +537,7 @@
             ],
             "definition": "TODO",
             "inScheme": "conceptscheme:gebouw",
+            "notation": "buitentimmerwerk",
             "note": "TODO",
             "prefLabel": "buitentimmerwerk",
             "semanticRelation": [
@@ -564,6 +566,7 @@
                 "gebouw:dakgebinte",
                 "gebouw:dakgoot"
             ],
+            "notation": "dak",
             "note": "TODO",
             "prefLabel": "dak",
             "semanticRelation": [
@@ -586,6 +589,7 @@
             ],
             "definition": "TODO",
             "inScheme": "conceptscheme:gebouw",
+            "notation": "dakbedekking",
             "note": "TODO",
             "prefLabel": "dakbedekking",
             "semanticRelation": [
@@ -606,6 +610,7 @@
             ],
             "definition": "TODO",
             "inScheme": "conceptscheme:gebouw",
+            "notation": "dakgebinte",
             "note": "TODO",
             "prefLabel": "dakgebinte",
             "semanticRelation": [
@@ -626,6 +631,7 @@
             ],
             "definition": "TODO",
             "inScheme": "conceptscheme:gebouw",
+            "notation": "dakgoot",
             "note": "TODO",
             "prefLabel": "dakgoot",
             "semanticRelation": [
@@ -667,6 +673,7 @@
                 "gebouw:trap",
                 "gebouw:dak"
             ],
+            "notation": "gebouw",
             "note": "TODO",
             "prefLabel": "gebouw",
             "semanticRelation": [
@@ -729,6 +736,7 @@
                 "gebouw:trap",
                 "gebouw:dak"
             ],
+            "notation": "gebouwonderdeel",
             "note": "TODO",
             "prefLabel": "gebouwonderdeel",
             "semanticRelation": [
@@ -758,6 +766,7 @@
             ],
             "definition": "TODO",
             "inScheme": "conceptscheme:gebouw",
+            "notation": "kroonlijst",
             "note": "TODO",
             "prefLabel": "kroonlijst",
             "semanticRelation": [
@@ -776,6 +785,7 @@
             ],
             "definition": "TODO",
             "inScheme": "conceptscheme:gebouw",
+            "notation": "lift",
             "note": "TODO",
             "prefLabel": "lift",
             "semanticRelation": [
@@ -808,6 +818,7 @@
             ],
             "narrower": "gebouw:buitenmuur",
             "narrowerTransitive": "gebouw:buitenmuur",
+            "notation": "muur",
             "note": "TODO",
             "prefLabel": "muur",
             "semanticRelation": [
@@ -841,6 +852,7 @@
                 "gemet:1355",
                 "gebouw:schoorsteen"
             ],
+            "notation": "schoorsteen",
             "note": "TODO",
             "prefLabel": "schoorsteen",
             "semanticRelation": [
@@ -861,6 +873,7 @@
             ],
             "definition": "TODO",
             "inScheme": "conceptscheme:gebouw",
+            "notation": "trap",
             "note": "TODO",
             "prefLabel": "trap",
             "semanticRelation": [
@@ -875,7 +888,7 @@
             "belongsTo": "omg_dataset:codelijst-gebouw",
             "definition": "TODO",
             "hasTopConcept": "gebouw:gebouw",
-            "notation": "gebouw",
+            "notation": "cs_gebouw",
             "note": "TODO",
             "prefLabel": "Codelijst gebouwtype.",
             "theme": "thema:5"
