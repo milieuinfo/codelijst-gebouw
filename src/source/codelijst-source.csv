@@ -1,6 +1,6 @@
 uri,notation,prefLabel,definition,collections,inScheme,topConceptOf,broader,exactMatch,belongsTo,theme
 collectie:verwaarlozing,co_verwaarlozing,Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand.,TODO,,conceptscheme:gebouw,,,,,thema:5
-conceptscheme:gebouw,cs_gebouw,Codelijst gebouwtype.,TODO,,,,,,omg_dataset:codelijst-gebouw,thema:5
+conceptscheme:gebouw,cs_gebouw,Codelijst bouw,"Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen.",,,,,,omg_dataset:codelijst-gebouw,thema:5
 gebouw:gebouw,gebouw,gebouw,TODO,,conceptscheme:gebouw,conceptscheme:gebouw,,gemet:1029,,thema:5
 gebouw:gebouwonderdeel,gebouwonderdeel,gebouwonderdeel,TODO,,conceptscheme:gebouw,,gebouw:gebouw,gemet:1033,,
 gebouw:dak,dak,dak,TODO,,conceptscheme:gebouw,,gebouw:gebouwonderdeel,,,thema:5

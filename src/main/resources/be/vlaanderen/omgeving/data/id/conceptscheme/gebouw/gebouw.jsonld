@@ -886,11 +886,11 @@
             "id": "conceptscheme:gebouw",
             "type": "skos:ConceptScheme",
             "belongsTo": "omg_dataset:codelijst-gebouw",
-            "definition": "TODO",
+            "definition": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen.",
             "hasTopConcept": "gebouw:gebouw",
             "notation": "cs_gebouw",
-            "note": "TODO",
-            "prefLabel": "Codelijst gebouwtype.",
+            "note": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen.",
+            "prefLabel": "Codelijst bouw",
             "theme": "thema:5"
         }
     ]

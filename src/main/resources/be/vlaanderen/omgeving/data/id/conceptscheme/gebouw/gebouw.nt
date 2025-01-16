@@ -307,9 +307,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://rdf-vocabulary.ddialliance.org/xkos#belongsTo> <https://data.omgeving.vlaanderen.be/id/dataset/codelijst-gebouw> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
-<https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#definition> "TODO"@nl .
+<https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#definition> "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."@nl .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#notation> "cs_gebouw" .
-<https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#note> "TODO"@nl .
-<https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst gebouwtype."@nl .
+<https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#note> "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."@nl .
+<https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst bouw"@nl .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .

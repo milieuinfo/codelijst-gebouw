@@ -236,9 +236,9 @@ gebouw:trap a skos:Concept;
     dcat:theme <http://www.eionet.europa.eu/gemet/theme/5>.
 conceptscheme:gebouw xkos:belongsTo omg_dataset:codelijst-gebouw;
     a skos:ConceptScheme;
-    skos:definition "TODO"@nl;
+    skos:definition "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."@nl;
     skos:hasTopConcept gebouw:gebouw;
     skos:notation "cs_gebouw";
-    skos:note "TODO"@nl;
-    skos:prefLabel "Codelijst gebouwtype."@nl;
+    skos:note "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."@nl;
+    skos:prefLabel "Codelijst bouw"@nl;
     dcat:theme <http://www.eionet.europa.eu/gemet/theme/5>.
