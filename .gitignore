@@ -18,3 +18,6 @@ buildNumber.properties
 src/.env
 src/utils/setenv.js
 .idea/
+temp
+target
+codelijst-gebouw.iml
