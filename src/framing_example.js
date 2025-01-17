@@ -46,12 +46,9 @@ const frame_concept_prefixes = {
             "@type": "@id"
         },
         "collectie": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/",
-        "eurovoc": "http://eurovoc.europa.eu/",
-        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",
         "thema": "http://www.eionet.europa.eu/gemet/theme/",
-        "xsd": "http://www.w3.org/2001/XMLSchema#",
         "@base": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/"
     },
     "@type": "skos:Collection",
