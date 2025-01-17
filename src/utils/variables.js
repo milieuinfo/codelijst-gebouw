@@ -49,7 +49,7 @@ const frame_skos_prefixes = {
     },
     "references":{
         "@embed": "@never",
-            "@omitDefault": true
+        "@omitDefault": true
     },
     "isReferencedBy":{
         "@embed": "@never",
@@ -201,5 +201,6 @@ export {
     ttl,
     nt,
     jsonld,
-    csv
+    csv,
+    frame_concept_prefixes
 };

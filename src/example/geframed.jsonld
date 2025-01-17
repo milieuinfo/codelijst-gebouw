@@ -1,0 +1,158 @@
+{
+    "@context": {
+        "id": "@id",
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "altLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "@language": "nl"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "broaderTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+            "@type": "@id"
+        },
+        "broadMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+            "@type": "@id"
+        },
+        "closeMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+            "@type": "@id"
+        },
+        "exactMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+            "@type": "@id"
+        },
+        "mappingRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+            "@type": "@id"
+        },
+        "broader": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broader",
+            "@type": "@id"
+        },
+        "narrower": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+            "@type": "@id"
+        },
+        "narrowerTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+            "@type": "@id"
+        },
+        "narrowMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+            "@type": "@id"
+        },
+        "semanticRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+            "@type": "@id"
+        },
+        "isDefinedBy": {
+            "@id": "rdfs:isDefinedBy",
+            "@type": "@id"
+        },
+        "collectie": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/",
+        "eurovoc": "http://eurovoc.europa.eu/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "thema": "http://www.eionet.europa.eu/gemet/theme/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@base": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/"
+    },
+    "id": "collectie:verwaarlozing",
+    "type": "skos:Collection",
+    "isDefinedBy": [
+        "../../../doc/collection/gebouw/verwaarlozing.jsonld",
+        "../../../doc/collection/gebouw/verwaarlozing",
+        "../../../doc/collection/gebouw/verwaarlozing.nt",
+        "../../../doc/collection/gebouw/verwaarlozing.rdf",
+        "../../../doc/collection/gebouw/verwaarlozing.ttl"
+    ],
+    "definition": "TODO",
+    "inScheme": "../../conceptscheme/gebouw",
+    "member": [
+        {
+            "id": "trap",
+            "prefLabel": "trap"
+        },
+        {
+            "id": "dakgebinte",
+            "prefLabel": "dakgebinte"
+        },
+        {
+            "id": "dakbedekking",
+            "prefLabel": "dakbedekking"
+        },
+        {
+            "id": "buitentimmerwerk",
+            "prefLabel": "buitentimmerwerk"
+        },
+        {
+            "id": "dakgoot",
+            "prefLabel": "dakgoot"
+        },
+        {
+            "id": "kroonlijst",
+            "prefLabel": "kroonlijst"
+        },
+        {
+            "id": "buitenmuur",
+            "prefLabel": "buitenmuur"
+        },
+        {
+            "id": "lift",
+            "prefLabel": "lift"
+        },
+        {
+            "id": "schoorsteen",
+            "prefLabel": "schoorsteen"
+        }
+    ],
+    "notation": "co_verwaarlozing",
+    "note": "TODO",
+    "prefLabel": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand.",
+    "theme": "thema:5",
+    "page": "../../../doc/collection/gebouw/verwaarlozing.html"
+}

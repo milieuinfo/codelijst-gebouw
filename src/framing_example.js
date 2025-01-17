@@ -1,0 +1,149 @@
+import fs from "fs";
+import request from "request";
+import jsonld from "jsonld";
+
+
+const frame_concept_prefixes = {
+    "@context": {
+        "id": "@id",
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "altLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "@language": "nl"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "broaderTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+            "@type": "@id"
+        },
+        "broadMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+            "@type": "@id"
+        },
+        "closeMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+            "@type": "@id"
+        },
+        "exactMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+            "@type": "@id"
+        },
+        "mappingRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+            "@type": "@id"
+        },
+        "broader": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broader",
+            "@type": "@id"
+        },
+        "narrower": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+            "@type": "@id"
+        },
+        "narrowerTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+            "@type": "@id"
+        },
+        "narrowMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+            "@type": "@id"
+        },
+        "semanticRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+            "@type": "@id"
+        },
+        "isDefinedBy": {
+            "@id": "rdfs:isDefinedBy",
+            "@type": "@id"
+        },
+        "collectie": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/",
+        "eurovoc": "http://eurovoc.europa.eu/",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "thema": "http://www.eionet.europa.eu/gemet/theme/",
+        "xsd": "http://www.w3.org/2001/XMLSchema#",
+        "@base": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/"
+    },
+    "@type": "skos:Collection",
+    "member": {
+        "@embed": "@always"
+    },
+    "isDefinedBy":{
+        "@embed": "@never",
+        "@omitDefault": true
+    },
+    "inScheme":{
+        "@embed": "@never",
+        "@omitDefault": true
+    },
+    "page":{
+        "@embed": "@never",
+        "@omitDefault": true
+    },
+
+}
+
+async function frame(my_json) {
+    const framed_json = await jsonld.frame(my_json, frame_concept_prefixes);
+    fs.writeFileSync('example/niet-geframed.jsonld', JSON.stringify(my_json, null, 4));
+    fs.writeFileSync('example/geframed.jsonld', JSON.stringify(framed_json, null, 4));
+}
+async function get_uris() {
+    console.log('');
+    let url = 'https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.jsonld'
+    let options = {json: true};
+    request(url, options, (error, res, body) => {
+        if (error) {
+            return  console.log(error)
+        };
+        if (!error && res.statusCode == 200) {
+
+            frame(body);
+
+        };
+    });
+}
+get_uris();
+

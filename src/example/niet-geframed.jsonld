@@ -1,0 +1,233 @@
+{
+    "@graph": [
+        {
+            "@id": "skos:Collection",
+            "label": {
+                "@language": "en",
+                "@value": "Collection"
+            }
+        },
+        {
+            "@id": "skos:inScheme",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "label": {
+                "@language": "en",
+                "@value": "is in scheme"
+            }
+        },
+        {
+            "@id": "skos:member",
+            "@type": "owl:ObjectProperty",
+            "label": {
+                "@language": "en",
+                "@value": "has member"
+            }
+        },
+        {
+            "@id": "skos:notation",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "label": {
+                "@language": "en",
+                "@value": "notation"
+            }
+        },
+        {
+            "@id": "skos:prefLabel",
+            "@type": [
+                "rdf:Property",
+                "owl:AnnotationProperty"
+            ],
+            "label": {
+                "@language": "en",
+                "@value": "preferred label"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing",
+            "createdWith": "http://dbpedia.org/resource/NetKernel",
+            "label": "Via content negotiation"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.html",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.jsonld",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.nt",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.rdf",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.ttl",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing",
+            "@type": "skos:Collection",
+            "isDefinedBy": [
+                "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.jsonld",
+                "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing",
+                "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.nt",
+                "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.rdf",
+                "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.ttl"
+            ],
+            "definition": {
+                "@language": "nl",
+                "@value": "TODO"
+            },
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "member": [
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen"
+            ],
+            "notation": "co_verwaarlozing",
+            "note": {
+                "@language": "nl",
+                "@value": "TODO"
+            },
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand."
+            },
+            "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+            "page": "https://data.omgeving.vlaanderen.be/doc/collection/gebouw/verwaarlozing.html"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "buitenmuur"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "buitentimmerwerk"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "dakbedekking"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "dakgebinte"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "dakgoot"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "kroonlijst"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "lift"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "schoorsteen"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "trap"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "Codelijst bouw"
+            }
+        }
+    ],
+    "@context": {
+        "label": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+        },
+        "createdWith": {
+            "@id": "http://purl.org/pav/createdWith",
+            "@type": "@id"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note"
+        },
+        "isDefinedBy": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition"
+        },
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "ns2": "http://purl.org/pav/",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "ns3": "http://www.w3.org/ns/dcat#"
+    }
+}
