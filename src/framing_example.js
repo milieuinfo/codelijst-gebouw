@@ -22,24 +22,12 @@ const frame_concept_prefixes = {
             "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
             "@type": "@id"
         },
-        "topConceptOf": {
-            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
-            "@type": "@id"
-        },
-        "hasTopConcept": {
-            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-            "@type": "@id"
-        },
         "prefLabel": {
             "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
             "@language": "nl"
         },
         "notation": {
             "@id": "http://www.w3.org/2004/02/skos/core#notation"
-        },
-        "altLabel": {
-            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
-            "@language": "nl"
         },
         "note": {
             "@id": "http://www.w3.org/2004/02/skos/core#note",
@@ -51,46 +39,6 @@ const frame_concept_prefixes = {
         },
         "member": {
             "@id": "http://www.w3.org/2004/02/skos/core#member",
-            "@type": "@id"
-        },
-        "broaderTransitive": {
-            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
-            "@type": "@id"
-        },
-        "broadMatch": {
-            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
-            "@type": "@id"
-        },
-        "closeMatch": {
-            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
-            "@type": "@id"
-        },
-        "exactMatch": {
-            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
-            "@type": "@id"
-        },
-        "mappingRelation": {
-            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
-            "@type": "@id"
-        },
-        "broader": {
-            "@id": "http://www.w3.org/2004/02/skos/core#broader",
-            "@type": "@id"
-        },
-        "narrower": {
-            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
-            "@type": "@id"
-        },
-        "narrowerTransitive": {
-            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
-            "@type": "@id"
-        },
-        "narrowMatch": {
-            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
-            "@type": "@id"
-        },
-        "semanticRelation": {
-            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
             "@type": "@id"
         },
         "isDefinedBy": {
