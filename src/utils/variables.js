@@ -201,6 +201,5 @@ export {
     ttl,
     nt,
     jsonld,
-    csv,
-    frame_concept_prefixes
+    csv
 };
