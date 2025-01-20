@@ -1,5 +1,4 @@
 import fs from "fs";
-import request from "request";
 import jsonld from "jsonld";
 
 const context = {
