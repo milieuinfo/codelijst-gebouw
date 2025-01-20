@@ -10,7 +10,7 @@
   <packaging>jar</packaging>
   <groupId>be.vlaanderen.omgeving.data.id.graph</groupId>
   <artifactId>codelijst-gebouw</artifactId>
-  <version>0.1.2-SNAPSHOT</version>
+  <version>0.2.0-SNAPSHOT</version>
   <name>codelijst-gebouw</name>
   <description />
 
