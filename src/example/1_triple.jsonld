@@ -1,0 +1,13 @@
+{
+  "@context": {
+    "id": "@id",
+    "prefLabel": {
+      "@id": "skos:prefLabel",
+      "@language": "nl"
+    },
+    "skos": "http://www.w3.org/2004/02/skos/core#",
+    "@base": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/"
+  },
+    "id": "schoorsteen",
+    "prefLabel": "schoorsteen"
+}

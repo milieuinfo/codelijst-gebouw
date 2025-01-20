@@ -40,6 +40,19 @@
             "@id": "rdfs:isDefinedBy",
             "@type": "@id"
         },
+        "has_concept": {
+            "@type": "@id",
+            "@reverse": "inScheme"
+        },
+        "hasTopConcept": {
+            "@type": "@id",
+            "@id": "skos:hasTopConcept"
+        },
+        "belongsTo": {
+            "@type": "@id",
+            "@id": "xkos:belongsTo"
+        },
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
         "collectie": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/",
         "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
         "skos": "http://www.w3.org/2004/02/skos/core#",

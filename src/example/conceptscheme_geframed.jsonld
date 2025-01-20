@@ -1,0 +1,154 @@
+{
+    "@context": {
+        "id": "@id",
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id"
+        },
+        "isDefinedBy": {
+            "@id": "rdfs:isDefinedBy",
+            "@type": "@id"
+        },
+        "has_concept": {
+            "@type": "@id",
+            "@reverse": "inScheme"
+        },
+        "hasTopConcept": {
+            "@type": "@id",
+            "@id": "skos:hasTopConcept"
+        },
+        "belongsTo": {
+            "@type": "@id",
+            "@id": "xkos:belongsTo"
+        },
+        "xkos": "http://rdf-vocabulary.ddialliance.org/xkos#",
+        "collectie": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "thema": "http://www.eionet.europa.eu/gemet/theme/",
+        "@base": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/"
+    },
+    "id": "../../conceptscheme/gebouw",
+    "has_concept": [
+        {
+            "id": "collectie:verwaarlozing",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand."
+        },
+        {
+            "id": "buitenmuur",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "buitenmuur"
+        },
+        {
+            "id": "buitentimmerwerk",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "buitentimmerwerk"
+        },
+        {
+            "id": "dak",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "dak"
+        },
+        {
+            "id": "dakbedekking",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "dakbedekking"
+        },
+        {
+            "id": "dakgebinte",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "dakgebinte"
+        },
+        {
+            "id": "dakgoot",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "dakgoot"
+        },
+        {
+            "id": "gebouw",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "gebouw",
+            "skos:topConceptOf": {
+                "id": "../../conceptscheme/gebouw"
+            }
+        },
+        {
+            "id": "gebouwonderdeel",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "gebouwonderdeel"
+        },
+        {
+            "id": "kroonlijst",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "kroonlijst"
+        },
+        {
+            "id": "lift",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "lift"
+        },
+        {
+            "id": "muur",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "muur"
+        },
+        {
+            "id": "schoorsteen",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "schoorsteen"
+        },
+        {
+            "id": "trap",
+            "inScheme": "../../conceptscheme/gebouw",
+            "prefLabel": "trap"
+        }
+    ],
+    "type": "skos:ConceptScheme",
+    "belongsTo": "../../dataset/codelijst-gebouw",
+    "isDefinedBy": [
+        "../../../doc/conceptscheme/gebouw.nt",
+        "../../../doc/conceptscheme/gebouw.rdf",
+        "../../../doc/conceptscheme/gebouw",
+        "../../../doc/conceptscheme/gebouw.ttl",
+        "../../../doc/conceptscheme/gebouw.jsonld"
+    ],
+    "definition": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen.",
+    "hasTopConcept": "gebouw",
+    "notation": "cs_gebouw",
+    "note": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen.",
+    "prefLabel": "Codelijst bouw",
+    "theme": "thema:5",
+    "page": "../../../doc/conceptscheme/gebouw.html"
+}

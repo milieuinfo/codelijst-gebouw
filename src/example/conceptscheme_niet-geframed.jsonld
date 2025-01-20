@@ -1,0 +1,326 @@
+{
+    "@graph": [
+        {
+            "@id": "skos:ConceptScheme",
+            "label": {
+                "@language": "en",
+                "@value": "Concept Scheme"
+            }
+        },
+        {
+            "@id": "skos:hasTopConcept",
+            "@type": [
+                "owl:ObjectProperty",
+                "rdf:Property"
+            ],
+            "label": {
+                "@language": "en",
+                "@value": "has top concept"
+            }
+        },
+        {
+            "@id": "skos:inScheme",
+            "label": {
+                "@language": "en",
+                "@value": "is in scheme"
+            }
+        },
+        {
+            "@id": "skos:notation",
+            "@type": [
+                "owl:DatatypeProperty",
+                "rdf:Property"
+            ],
+            "label": {
+                "@language": "en",
+                "@value": "notation"
+            }
+        },
+        {
+            "@id": "skos:prefLabel",
+            "@type": [
+                "rdf:Property",
+                "owl:AnnotationProperty"
+            ],
+            "label": {
+                "@language": "en",
+                "@value": "preferred label"
+            }
+        },
+        {
+            "@id": "skos:topConceptOf",
+            "label": {
+                "@language": "en",
+                "@value": "is top concept in scheme"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw",
+            "createdWith": "http://dbpedia.org/resource/NetKernel",
+            "label": "Via content negotiation"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.html",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.jsonld",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.nt",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.rdf",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.ttl",
+            "createdWith": "http://dbpedia.org/resource/NetKernel"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand."
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "buitenmuur"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "buitentimmerwerk"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "dak"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "dakbedekking"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "dakgebinte"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "dakgoot"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "gebouw"
+            },
+            "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "gebouwonderdeel"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "kroonlijst"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "lift"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "muur"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "schoorsteen"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "trap"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "@type": "skos:ConceptScheme",
+            "belongsTo": "https://data.omgeving.vlaanderen.be/id/dataset/codelijst-gebouw",
+            "isDefinedBy": [
+                "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.nt",
+                "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.rdf",
+                "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw",
+                "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.ttl",
+                "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.jsonld"
+            ],
+            "definition": {
+                "@language": "nl",
+                "@value": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."
+            },
+            "hasTopConcept": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+            "notation": "cs_gebouw",
+            "note": {
+                "@language": "nl",
+                "@value": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."
+            },
+            "prefLabel": {
+                "@language": "nl",
+                "@value": "Codelijst bouw"
+            },
+            "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+            "page": "https://data.omgeving.vlaanderen.be/doc/conceptscheme/gebouw.html"
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/dataset/codelijst-gebouw",
+            "rootResource": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "label": {
+                "@language": "nl",
+                "@value": "codelijst gebouw"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/dataset/codelijst-gebouw_0.1.0",
+            "rootResource": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "label": {
+                "@language": "nl",
+                "@value": "codelijst gebouw Versie 0.1.0"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/dataset/codelijst-gebouw_0.1.1",
+            "rootResource": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "label": {
+                "@language": "nl",
+                "@value": "codelijst gebouw Versie 0.1.1"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/dataset/codelijst-gebouw_0.2.0",
+            "rootResource": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "label": {
+                "@language": "nl",
+                "@value": "codelijst gebouw Versie 0.2.0"
+            }
+        },
+        {
+            "@id": "https://data.omgeving.vlaanderen.be/id/namedgraph/codelijst-gebouw",
+            "rootResource": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "label": {
+                "@language": "nl",
+                "@value": "Graph codelijst gebouw"
+            }
+        }
+    ],
+    "@context": {
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel"
+        },
+        "label": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label"
+        },
+        "rootResource": {
+            "@id": "http://rdfs.org/ns/void#rootResource",
+            "@type": "@id"
+        },
+        "createdWith": {
+            "@id": "http://purl.org/pav/createdWith",
+            "@type": "@id"
+        },
+        "isDefinedBy": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#isDefinedBy",
+            "@type": "@id"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note"
+        },
+        "belongsTo": {
+            "@id": "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "void": "http://rdfs.org/ns/void#",
+        "rdf": "http://www.w3.org/1999/02/22-rdf-syntax-ns#",
+        "owl": "http://www.w3.org/2002/07/owl#",
+        "skos": "http://www.w3.org/2004/02/skos/core#",
+        "rdfs": "http://www.w3.org/2000/01/rdf-schema#",
+        "ns2": "http://purl.org/pav/",
+        "ns4": "http://www.w3.org/ns/dcat#",
+        "foaf": "http://xmlns.com/foaf/0.1/",
+        "ns3": "http://rdf-vocabulary.ddialliance.org/xkos#"
+    }
+}
