@@ -22,7 +22,7 @@
     "child_process": "^1.0.2",
     "dotenv": "^16.4.5",
     "js-yaml": "^4.1.0",
-    "maven-metadata-generator-npm": "^0.2.56",
-    "package.json": "^2.0.1"
+    "maven-metadata-generator-npm": "^0.2.57",
+    "package.json": "^0.0.0"
   }
 }
