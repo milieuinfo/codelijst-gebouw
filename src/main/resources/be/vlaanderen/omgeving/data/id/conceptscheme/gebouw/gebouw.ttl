@@ -100,10 +100,10 @@ gebouw:algemene_kenmerken a skos:Concept;
 gebouw:buitenmuur a skos:Concept;
     skos:broader gebouw:muur;
     skos:broaderTransitive gebouw:gebouw, gebouw:gebouwonderdeel, gebouw:muur;
-    skos:definition "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal"@nl;
+    skos:definition "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal"@nl;
     skos:inScheme conceptscheme:gebouw;
     skos:notation "buitenmuur";
-    skos:note "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal"@nl;
+    skos:note "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal"@nl;
     skos:prefLabel "buitenmuur"@nl;
     skos:semanticRelation gebouw:gebouw, gebouw:gebouwonderdeel, gebouw:muur;
     dcat:theme <http://www.eionet.europa.eu/gemet/theme/5>.
@@ -238,10 +238,10 @@ gebouw:schoorsteen a skos:Concept;
 gebouw:stabiliteit a skos:Concept;
     skos:broader gebouw:algemene_kenmerken;
     skos:broaderTransitive gebouw:algemene_kenmerken, gebouw:gebouw;
-    skos:definition "\"De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken.\nWanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, \"\"eigen gewicht\"\", trillingen, bevingen).\""@nl;
+    skos:definition "De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken. Wanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, eigen gewicht, trillingen, bevingen)."@nl;
     skos:inScheme conceptscheme:gebouw;
     skos:notation "stabiliteit";
-    skos:note "\"De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken.\nWanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, \"\"eigen gewicht\"\", trillingen, bevingen).\""@nl;
+    skos:note "De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken. Wanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, eigen gewicht, trillingen, bevingen)."@nl;
     skos:prefLabel "stabiliteit"@nl;
     skos:semanticRelation gebouw:algemene_kenmerken, gebouw:gebouw;
     dcat:theme <http://www.eionet.europa.eu/gemet/theme/5>.
