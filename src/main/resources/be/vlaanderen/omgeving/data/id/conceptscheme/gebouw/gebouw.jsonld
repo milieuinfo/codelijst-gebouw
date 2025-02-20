@@ -488,7 +488,7 @@
         {
             "id": "collectie:verwaarlozing",
             "type": "skos:Collection",
-            "definition": "TODO",
+            "definition": "het vertonen van uitgesproken gebreken van algemene of beperkte omvang aan het bedrijfsgebouw. De Vlaamse regering bepaalt de gebreken van algemene en beperkte omvang, alsook de criteria voor de beoordeling van de gebreken en de minimumnorm van de te vertonen gebreken om een bedrijfsruimte al dan niet als geheel of gedeeltelijk verwaarloosd te beschouwen;",
             "inScheme": "conceptscheme:gebouw",
             "member": [
                 "gebouw:schoorsteen",
@@ -499,12 +499,42 @@
                 "gebouw:dakgoot",
                 "gebouw:kroonlijst",
                 "gebouw:lift",
-                "gebouw:trap"
+                "gebouw:stabiliteit",
+                "gebouw:trap",
+                "gebouw:veiligheid",
+                "gebouw:vochtindringing"
             ],
             "notation": "co_verwaarlozing",
-            "note": "TODO",
+            "note": "het vertonen van uitgesproken gebreken van algemene of beperkte omvang aan het bedrijfsgebouw. De Vlaamse regering bepaalt de gebreken van algemene en beperkte omvang, alsook de criteria voor de beoordeling van de gebreken en de minimumnorm van de te vertonen gebreken om een bedrijfsruimte al dan niet als geheel of gedeeltelijk verwaarloosd te beschouwen;",
             "prefLabel": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand.",
             "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:algemene_kenmerken",
+            "type": "skos:Concept",
+            "broader": "gebouw:gebouw",
+            "broaderTransitive": "gebouw:gebouw",
+            "definition": "Problemen met het gebouw/de gebouwen omwille van verwaarlozing. Deze hebben een globale impact op het gebouw.",
+            "inScheme": "conceptscheme:gebouw",
+            "narrower": [
+                "gebouw:stabiliteit",
+                "gebouw:veiligheid",
+                "gebouw:vochtindringing"
+            ],
+            "narrowerTransitive": [
+                "gebouw:stabiliteit",
+                "gebouw:veiligheid",
+                "gebouw:vochtindringing"
+            ],
+            "notation": "algemene kenmerken",
+            "note": "Problemen met het gebouw/de gebouwen omwille van verwaarlozing. Deze hebben een globale impact op het gebouw.",
+            "prefLabel": "algemene kenmerken",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:stabiliteit",
+                "gebouw:veiligheid",
+                "gebouw:vochtindringing"
+            ]
         },
         {
             "id": "gebouw:buitenmuur",
@@ -515,10 +545,10 @@
                 "gebouw:gebouwonderdeel",
                 "gebouw:muur"
             ],
-            "definition": "TODO",
+            "definition": "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal",
             "inScheme": "conceptscheme:gebouw",
             "notation": "buitenmuur",
-            "note": "TODO",
+            "note": "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal",
             "prefLabel": "buitenmuur",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -535,10 +565,10 @@
                 "gebouw:gebouw",
                 "gebouw:gebouwonderdeel"
             ],
-            "definition": "TODO",
+            "definition": "Al het timmerwerk dat plaats vindt aan de buitenkant van de woning.",
             "inScheme": "conceptscheme:gebouw",
             "notation": "buitentimmerwerk",
-            "note": "TODO",
+            "note": "Al het timmerwerk dat plaats vindt aan de buitenkant van de woning.",
             "prefLabel": "buitentimmerwerk",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -554,7 +584,7 @@
                 "gebouw:gebouw",
                 "gebouw:gebouwonderdeel"
             ],
-            "definition": "TODO",
+            "definition": "Bovenafsluiting van een gebouw.",
             "inScheme": "conceptscheme:gebouw",
             "narrower": [
                 "gebouw:dakbedekking",
@@ -567,7 +597,7 @@
                 "gebouw:dakgoot"
             ],
             "notation": "dak",
-            "note": "TODO",
+            "note": "Bovenafsluiting van een gebouw.",
             "prefLabel": "dak",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -587,10 +617,10 @@
                 "gebouw:gebouwonderdeel",
                 "gebouw:dak"
             ],
-            "definition": "TODO",
+            "definition": "Dakbedekking of dakbekleding is een beschermende laag die op een plat of hellend dak wordt aangebracht, om dit waterdicht, sneeuwdicht en tochtvrij te maken.  Het materiaal moet onbrandbaar, weersbestendig en het liefst licht van gewicht zijn.",
             "inScheme": "conceptscheme:gebouw",
             "notation": "dakbedekking",
-            "note": "TODO",
+            "note": "Dakbedekking of dakbekleding is een beschermende laag die op een plat of hellend dak wordt aangebracht, om dit waterdicht, sneeuwdicht en tochtvrij te maken.  Het materiaal moet onbrandbaar, weersbestendig en het liefst licht van gewicht zijn.",
             "prefLabel": "dakbedekking",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -608,10 +638,10 @@
                 "gebouw:gebouwonderdeel",
                 "gebouw:dak"
             ],
-            "definition": "TODO",
+            "definition": "Een dakconstructie van verschillende homogene materialen (hout, metaal of beton) en is een van de hoofddelen van een gebouw die zorgt voor structurele stabiliteit.",
             "inScheme": "conceptscheme:gebouw",
             "notation": "dakgebinte",
-            "note": "TODO",
+            "note": "Een dakconstructie van verschillende homogene materialen (hout, metaal of beton) en is een van de hoofddelen van een gebouw die zorgt voor structurele stabiliteit.",
             "prefLabel": "dakgebinte",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -629,10 +659,10 @@
                 "gebouw:gebouwonderdeel",
                 "gebouw:dak"
             ],
-            "definition": "TODO",
+            "definition": "Een dakgoot of goot is een langgerekte bakvormige (bakgoot) of halfronde (mastgoot) constructie, die tot doel heeft, het van het dak komende regen- en smeltwater op te vangen en af te voeren",
             "inScheme": "conceptscheme:gebouw",
             "notation": "dakgoot",
-            "note": "TODO",
+            "note": "Een dakgoot of goot is een langgerekte bakvormige (bakgoot) of halfronde (mastgoot) constructie, die tot doel heeft, het van het dak komende regen- en smeltwater op te vangen en af te voeren",
             "prefLabel": "dakgoot",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -648,7 +678,7 @@
                 "gemet:1029",
                 "gebouw:gebouw"
             ],
-            "definition": "TODO",
+            "definition": "Iets gebouwd met een dak en muren, zoals een huis of fabriek.",
             "exactMatch": [
                 "gemet:1029",
                 "gebouw:gebouw"
@@ -658,7 +688,10 @@
                 "gemet:1029",
                 "gebouw:gebouw"
             ],
-            "narrower": "gebouw:gebouwonderdeel",
+            "narrower": [
+                "gebouw:gebouwonderdeel",
+                "gebouw:algemene_kenmerken"
+            ],
             "narrowerTransitive": [
                 "gebouw:gebouwonderdeel",
                 "gebouw:schoorsteen",
@@ -670,11 +703,15 @@
                 "gebouw:dakgoot",
                 "gebouw:kroonlijst",
                 "gebouw:lift",
+                "gebouw:stabiliteit",
                 "gebouw:trap",
+                "gebouw:veiligheid",
+                "gebouw:vochtindringing",
+                "gebouw:algemene_kenmerken",
                 "gebouw:dak"
             ],
             "notation": "gebouw",
-            "note": "TODO",
+            "note": "Iets gebouwd met een dak en muren, zoals een huis of fabriek.",
             "prefLabel": "gebouw",
             "semanticRelation": [
                 "gemet:1029",
@@ -689,7 +726,11 @@
                 "gebouw:dakgoot",
                 "gebouw:kroonlijst",
                 "gebouw:lift",
+                "gebouw:stabiliteit",
                 "gebouw:trap",
+                "gebouw:veiligheid",
+                "gebouw:vochtindringing",
+                "gebouw:algemene_kenmerken",
                 "gebouw:dak"
             ],
             "topConceptOf": "conceptscheme:gebouw",
@@ -704,7 +745,7 @@
                 "gemet:1033",
                 "gebouw:gebouwonderdeel"
             ],
-            "definition": "TODO",
+            "definition": "Een bouwelement dat gebruik maakt van industriële producten die als onafhankelijk worden vervaardigd totdat ze kunnen worden verbonden met andere elementen.",
             "exactMatch": [
                 "gemet:1033",
                 "gebouw:gebouwonderdeel"
@@ -737,7 +778,7 @@
                 "gebouw:dak"
             ],
             "notation": "gebouwonderdeel",
-            "note": "TODO",
+            "note": "Een bouwelement dat gebruik maakt van industriële producten die als onafhankelijk worden vervaardigd totdat ze kunnen worden verbonden met andere elementen.",
             "prefLabel": "gebouwonderdeel",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -764,10 +805,10 @@
                 "gebouw:gebouw",
                 "gebouw:gebouwonderdeel"
             ],
-            "definition": "TODO",
+            "definition": "Een kroonlijst of deklijst is een horizontale band aan een bouwwerk, meestal uitspringend en geprofileerd of van versieringen voorzien. Ze verfraaien de verbinding tussen bijvoorbeeld wand en plafond",
             "inScheme": "conceptscheme:gebouw",
             "notation": "kroonlijst",
-            "note": "TODO",
+            "note": "Een kroonlijst of deklijst is een horizontale band aan een bouwwerk, meestal uitspringend en geprofileerd of van versieringen voorzien. Ze verfraaien de verbinding tussen bijvoorbeeld wand en plafond",
             "prefLabel": "kroonlijst",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -783,10 +824,10 @@
                 "gebouw:gebouw",
                 "gebouw:gebouwonderdeel"
             ],
-            "definition": "TODO",
+            "definition": "hijstoestel om voorwerpen of personen van de ene verdieping van een gebouw naar een andere te vervoeren",
             "inScheme": "conceptscheme:gebouw",
             "notation": "lift",
-            "note": "TODO",
+            "note": "hijstoestel om voorwerpen of personen van de ene verdieping van een gebouw naar een andere te vervoeren",
             "prefLabel": "lift",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -806,7 +847,7 @@
                 "gemet:9023",
                 "gebouw:muur"
             ],
-            "definition": "TODO",
+            "definition": "Een verticale constructie gemaakt van steen, baksteen, hout, enz., met een lengte en hoogte die veel groter zijn dan de dikte, die wordt gebruikt om te omsluiten, te verdelen of te ondersteunen.",
             "exactMatch": [
                 "gemet:9023",
                 "gebouw:muur"
@@ -819,7 +860,7 @@
             "narrower": "gebouw:buitenmuur",
             "narrowerTransitive": "gebouw:buitenmuur",
             "notation": "muur",
-            "note": "TODO",
+            "note": "Een verticale constructie gemaakt van steen, baksteen, hout, enz., met een lengte en hoogte die veel groter zijn dan de dikte, die wordt gebruikt om te omsluiten, te verdelen of te ondersteunen.",
             "prefLabel": "muur",
             "semanticRelation": [
                 "gebouw:gebouw",
@@ -842,7 +883,7 @@
                 "gemet:1355",
                 "gebouw:schoorsteen"
             ],
-            "definition": "TODO",
+            "definition": "Een verticale structuur van baksteen, metselwerk of staal die rook of stoom wegvoert van een brand, motor, enz.",
             "exactMatch": [
                 "gemet:1355",
                 "gebouw:schoorsteen"
@@ -853,13 +894,32 @@
                 "gebouw:schoorsteen"
             ],
             "notation": "schoorsteen",
-            "note": "TODO",
+            "note": "Een verticale structuur van baksteen, metselwerk of staal die rook of stoom wegvoert van een brand, motor, enz.",
             "prefLabel": "schoorsteen",
             "semanticRelation": [
                 "gebouw:gebouw",
                 "gebouw:gebouwonderdeel",
                 "gemet:1355",
                 "gebouw:schoorsteen"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:stabiliteit",
+            "type": "skos:Concept",
+            "broader": "gebouw:algemene_kenmerken",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:algemene_kenmerken"
+            ],
+            "definition": "\"De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken.\nWanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, \"\"eigen gewicht\"\", trillingen, bevingen).\"",
+            "inScheme": "conceptscheme:gebouw",
+            "notation": "stabiliteit",
+            "note": "\"De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken.\nWanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, \"\"eigen gewicht\"\", trillingen, bevingen).\"",
+            "prefLabel": "stabiliteit",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:algemene_kenmerken"
             ],
             "theme": "thema:5"
         },
@@ -871,14 +931,52 @@
                 "gebouw:gebouw",
                 "gebouw:gebouwonderdeel"
             ],
-            "definition": "TODO",
+            "definition": "Een opeenvolging van treden of meerdere reeksen treden verbonden door middel van overlopen, bedoeld om van de ene verdieping naar de andere te komen",
             "inScheme": "conceptscheme:gebouw",
             "notation": "trap",
-            "note": "TODO",
+            "note": "Een opeenvolging van treden of meerdere reeksen treden verbonden door middel van overlopen, bedoeld om van de ene verdieping naar de andere te komen",
             "prefLabel": "trap",
             "semanticRelation": [
                 "gebouw:gebouw",
                 "gebouw:gebouwonderdeel"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:veiligheid",
+            "type": "skos:Concept",
+            "broader": "gebouw:algemene_kenmerken",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:algemene_kenmerken"
+            ],
+            "definition": "Constructieve veiligheid is een belangrijk onderdeel van een bouwwerk. De kwaliteit van een constructie bepaalt een gebouw of kunstwerk voldoende sterk en stabiel blijft bij intensief gebruik en bij extreme situaties.",
+            "inScheme": "conceptscheme:gebouw",
+            "notation": "veiligheid",
+            "note": "Constructieve veiligheid is een belangrijk onderdeel van een bouwwerk. De kwaliteit van een constructie bepaalt een gebouw of kunstwerk voldoende sterk en stabiel blijft bij intensief gebruik en bij extreme situaties.",
+            "prefLabel": "veiligheid",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:algemene_kenmerken"
+            ],
+            "theme": "thema:5"
+        },
+        {
+            "id": "gebouw:vochtindringing",
+            "type": "skos:Concept",
+            "broader": "gebouw:algemene_kenmerken",
+            "broaderTransitive": [
+                "gebouw:gebouw",
+                "gebouw:algemene_kenmerken"
+            ],
+            "definition": "Vochtproblemen ontstaan door opstijgend vocht, condensatie of lekkages en leiden tot schimmel, geurhinder en structurele schade. Veelvoorkomende oorzaken zijn slechte ventilatie, poreuze muren of waterinfiltratie.",
+            "inScheme": "conceptscheme:gebouw",
+            "notation": "vochtindringing",
+            "note": "Vochtproblemen ontstaan door opstijgend vocht, condensatie of lekkages en leiden tot schimmel, geurhinder en structurele schade. Veelvoorkomende oorzaken zijn slechte ventilatie, poreuze muren of waterinfiltratie.",
+            "prefLabel": "vochtindringing",
+            "semanticRelation": [
+                "gebouw:gebouw",
+                "gebouw:algemene_kenmerken"
             ],
             "theme": "thema:5"
         },
