@@ -21,3 +21,4 @@ src/utils/setenv.js
 temp/
 target
 codelijst-gebouw.iml
+node_modules/
