@@ -16,7 +16,7 @@ const context_prefixes = Object.assign({},context , prefixes)
 
 const frame_concept_via_collectie = {
     "@context": context,
-    "@type": "http://www.w3.org/2004/02/skos/core#Collection",
+    "@type": ["http://www.w3.org/2004/02/skos/core#Collection", "http://www.w3.org/2004/02/skos/core#ConceptScheme"],
     "member": {
         "@type": "http://www.w3.org/2004/02/skos/core#Concept",
         "@embed": "@always",
@@ -104,6 +104,12 @@ const frame_concept_via_collectie = {
         "@embed": "@never",
         "@omitDefault": true
     },
+
+    "hasTopConcept": {
+        "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "@embed": "@never",
+        "@omitDefault": true
+    },
     "inScheme": {
         "@type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
         "@embed": "@never",
@@ -118,7 +124,8 @@ const frame_skos_prefixes = {
     "member": {
         "@type": "http://www.w3.org/2004/02/skos/core#Concept",
         "@embed": "@always",
-        "@omitDefault": true,"inScheme": {
+        "@omitDefault": true,
+        "inScheme": {
             "@type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
             "@embed": "@never",
             "@omitDefault": true
