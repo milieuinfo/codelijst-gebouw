@@ -245,7 +245,8 @@
   },
   "hasTopConcept" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#hasTopConcept",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "uri" : {
     "@id" : "@id",
@@ -272,45 +273,52 @@
   },
   "member" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#member",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
-  "casNumber" : {
-    "@id" : "http://dbpedia.org/ontology/casNumber"
-  },
+
   "references" : {
     "@id" : "http://purl.org/dc/terms/references",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "isReferencedBy" : {
     "@id" : "http://purl.org/dc/terms/isReferencedBy",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "relation" : {
     "@id" : "http://purl.org/dc/terms/relation",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "graph" : {
     "@id" : "@graph"
   },
   "broaderTransitive" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#broaderTransitive",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "broadMatch" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#broadMatch",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "closeMatch" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#closeMatch",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "exactMatch" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "mappingRelation" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#mappingRelation",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "broader" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#broader",
@@ -318,11 +326,13 @@
   },
   "narrower" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#narrower",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "narrowerTransitive" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "narrowMatch" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#narrowMatch",
@@ -330,7 +340,8 @@
   },
   "semanticRelation" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#semanticRelation",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "belongsTo" : {
     "@id" : "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
@@ -338,7 +349,8 @@
   },
   "related" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#related",
-    "@type" : "@id"
+    "@type" : "@id",
+    "@container": "@set"
   },
   "dc_elements_identifier" : {
     "@id" : "http://purl.org/dc/elements/1.1/identifier"
