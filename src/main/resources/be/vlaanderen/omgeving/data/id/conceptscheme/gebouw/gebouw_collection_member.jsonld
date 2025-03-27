@@ -309,6 +309,10 @@
             "@type": "@id",
             "@container": "@set"
         },
+        "memberOf": {
+            "@id": "https://data.omgeving.vlaanderen.be/ns/algemeen#memberOf",
+            "@type": "@id"
+        },
         "exactMatch": {
             "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
             "@type": "@id",
@@ -381,7 +385,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
@@ -400,7 +405,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
@@ -421,7 +427,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
@@ -442,7 +449,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
@@ -463,7 +471,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
@@ -482,7 +491,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
@@ -501,7 +511,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
@@ -534,7 +545,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit",
@@ -553,7 +565,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap",
@@ -572,7 +585,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid",
@@ -591,7 +605,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 },
                 {
                     "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing",
@@ -610,7 +625,8 @@
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
                         "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
                     ],
-                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
                 }
             ],
             "notation": "co_verwaarlozing",

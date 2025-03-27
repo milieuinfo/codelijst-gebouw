@@ -13,6 +13,374 @@ const context = JSON.parse(fs.readFileSync(config.source.path + config.source.co
 
 const context_prefixes = Object.assign({},context , prefixes)
 
+const frame_concept_via_conceptscheme = {
+    "@context": context,
+    "@type": ["http://www.w3.org/2004/02/skos/core#ConceptScheme", "http://www.w3.org/2004/02/skos/core#Collection"],
+    "member": {
+        "@embed": "@never",
+        "@omitDefault": true
+    },
+    "levels":{
+        "@embed": "@never",
+        "@omitDefault": true
+
+    },
+    "inScheme" : {
+        "@embed": "@never",
+        "@omitDefault": true
+    },
+
+    "hasTopConcept":{
+        "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+        "@embed": "@always",
+        "@omitDefault": true,
+
+        "closeMatch" : {
+            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "semanticRelation" : {
+            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "mappingRelation" : {
+            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "exactMatch" : {
+            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "narrowerTransitive":{
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "memberOf": {
+            "@embed": "@never",
+            // "@reverse": "member",
+            "@omitDefault": true
+        },
+        "related":{
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+
+        "relatedMatch":{
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "hasVersion": {
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "isVersionOf": {
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "relation":{
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "broader":{
+            "@embed": "@never",
+            "@omitDefault": true
+        },
+        "narrower":{
+            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+            "@embed": "@always",
+            "@omitDefault": true,
+            "memberOf": {
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "closeMatch" : {
+                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "semanticRelation" : {
+                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "mappingRelation" : {
+                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "exactMatch" : {
+                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "hasVersion": {
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "isVersionOf": {
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "relatedMatch":{
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "related":{ "@embed": "@never",
+                "@omitDefault": true
+            },
+            "broader":{
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "broaderTransitive":{
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "narrowerTransitive":{
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "relation":{
+                "@embed": "@never",
+                "@omitDefault": true
+            },
+            "narrower":{
+                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                "@embed": "@always",
+                "@omitDefault": true,
+                "memberOf": {
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "closeMatch" : {
+                    "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "semanticRelation" : {
+                    "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "mappingRelation" : {
+                    "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "exactMatch" : {
+                    "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "hasVersion": {
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "isVersionOf": {
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "relatedMatch":{
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "related":{ "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "narrowerTransitive":{
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "broaderTransitive":{
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "broader":{
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "relation":{
+                    "@embed": "@never",
+                    "@omitDefault": true
+                },
+                "narrower":{
+                    "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "@embed": "@always",
+                    "@omitDefault": true,
+                    "memberOf": {
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "closeMatch" : {
+                        "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "semanticRelation" : {
+                        "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "mappingRelation" : {
+                        "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "exactMatch" : {
+                        "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "hasVersion": {
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "isVersionOf": {
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "relatedMatch":{
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "related":{ "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "narrowerTransitive":{
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "broaderTransitive":{
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "broader":{
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "relation":{
+                        "@embed": "@never",
+                        "@omitDefault": true
+                    },
+                    "narrower":{
+
+                        "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                        "@embed": "@always",
+                        "@omitDefault": true,
+                        "closeMatch" : {
+                            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "semanticRelation" : {
+                            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "mappingRelation" : {
+                            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "exactMatch" : {
+                            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "memberOf": {
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "hasVersion": {
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "isVersionOf": {
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "relatedMatch":{
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "related":{ "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "narrowerTransitive":{
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "broaderTransitive":{
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "broader":{
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "relation":{
+                            "@embed": "@never",
+                            "@omitDefault": true
+                        },
+                        "narrower":{
+                            "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                            "@embed": "@always",
+                            "@omitDefault": true,
+                            "memberOf": {
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "closeMatch" : {
+                                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "semanticRelation" : {
+                                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "mappingRelation" : {
+                                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "exactMatch" : {
+                                "@type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "hasVersion": {
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "isVersionOf": {
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "relatedMatch":{
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "related":{ "@embed": "@never",
+                                "@omitDefault": true
+                            },
+                            "relation":{
+                                "@embed": "@never",
+                                "@omitDefault": true
+                            },
+
+                        },
+                    },
+                },
+            },
+        },
+    }
+}
 
 const frame_concept_via_collectie = {
     "@context": context,
@@ -386,6 +754,7 @@ const csv = [config.skos.path + config.skos.name + '/' + config.skos.name + conf
 
 
 export {
+    frame_concept_via_conceptscheme,
     frame_concept_via_collectie,
     virtuoso,
     ttl,

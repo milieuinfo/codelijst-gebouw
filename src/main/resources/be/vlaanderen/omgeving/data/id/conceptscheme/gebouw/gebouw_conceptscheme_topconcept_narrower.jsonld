@@ -1,0 +1,875 @@
+{
+    "@context": {
+        "sparql-service-description-graph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#graph",
+            "@type": "@id"
+        },
+        "defaultGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultGraph",
+            "@type": "@id"
+        },
+        "collections": {
+            "@type": "@id",
+            "@reverse": "member"
+        },
+        "id": "@id",
+        "type": {
+            "@id": "@type",
+            "@type": "@id"
+        },
+        "source": {
+            "@id": "http://purl.org/dc/terms/source",
+            "@type": "@id"
+        },
+        "sparql-service-description-name": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#name",
+            "@type": "@id"
+        },
+        "identifier": {
+            "@id": "http://purl.org/dc/terms/identifier",
+            "@type": "@id"
+        },
+        "hasVersion": {
+            "@id": "http://purl.org/dc/terms/hasVersion",
+            "@type": "@id"
+        },
+        "isVersionOf": {
+            "@id": "http://purl.org/dc/terms/isVersionOf",
+            "@type": "@id"
+        },
+        "label": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#label",
+            "@language": "nl"
+        },
+        "distribution": {
+            "@id": "http://www.w3.org/ns/dcat#distribution",
+            "@type": "@id"
+        },
+        "alternative": {
+            "@id": "http://purl.org/dc/terms/alternative",
+            "@language": "nl"
+        },
+        "description": {
+            "@id": "http://purl.org/dc/terms/description",
+            "@language": "nl"
+        },
+        "spatial": {
+            "@id": "http://purl.org/dc/terms/spatial",
+            "@type": "@id"
+        },
+        "page": {
+            "@id": "http://xmlns.com/foaf/0.1/page",
+            "@type": "@id"
+        },
+        "theme": {
+            "@id": "http://www.w3.org/ns/dcat#theme",
+            "@type": "@id"
+        },
+        "title": {
+            "@id": "http://purl.org/dc/terms/title",
+            "@language": "nl"
+        },
+        "landingPage": {
+            "@id": "http://www.w3.org/ns/dcat#landingPage",
+            "@type": "@id"
+        },
+        "rightsHolder": {
+            "@id": "http://purl.org/dc/terms/rightsHolder",
+            "@type": "@id"
+        },
+        "language": "http://publications.europa.eu/resource/authority/language/",
+        "accrualPeriodicity": {
+            "@id": "http://purl.org/dc/terms/accrualPeriodicity",
+            "@type": "@id"
+        },
+        "publisher": {
+            "@id": "http://purl.org/dc/terms/publisher",
+            "@type": "@id"
+        },
+        "dct.language": {
+            "@id": "http://purl.org/dc/terms/language",
+            "@type": "@id"
+        },
+        "contactPoint": {
+            "@id": "http://www.w3.org/ns/dcat#contactPoint",
+            "@type": "@id"
+        },
+        "temporal": {
+            "@id": "http://purl.org/dc/terms/temporal",
+            "@type": "@id"
+        },
+        "issued": {
+            "@id": "http://purl.org/dc/terms/issued",
+            "@type": "http://www.w3.org/2001/XMLSchema#dateTime"
+        },
+        "accessRights": {
+            "@id": "http://purl.org/dc/terms/accessRights",
+            "@type": "@id"
+        },
+        "license": {
+            "@id": "http://purl.org/dc/terms/license",
+            "@type": "@id"
+        },
+        "accessURL": {
+            "@id": "http://www.w3.org/ns/dcat#accessURL",
+            "@type": "@id"
+        },
+        "compressFormat": {
+            "@id": "http://www.w3.org/ns/dcat#compressFormat",
+            "@type": "@id"
+        },
+        "downloadURL": {
+            "@id": "http://www.w3.org/ns/dcat#downloadURL",
+            "@type": "@id"
+        },
+        "mediaType": {
+            "@id": "http://www.w3.org/ns/dcat#mediaType",
+            "@type": "@id"
+        },
+        "format": {
+            "@id": "http://purl.org/dc/terms/format",
+            "@type": "@id"
+        },
+        "versionInfo": {
+            "@id": "http://spdx.org/rdf/terms#versionInfo"
+        },
+        "packageName": {
+            "@id": "http://spdx.org/rdf/terms#packageName"
+        },
+        "packageFileName": {
+            "@id": "http://spdx.org/rdf/terms#packageFileName"
+        },
+        "downloadLocation": {
+            "@id": "http://spdx.org/rdf/terms#downloadLocation",
+            "@type": "@id"
+        },
+        "relationshipType_packageOf": {
+            "@id": "http://spdx.org/rdf/terms#relationshipType_packageOf",
+            "@type": "@id"
+        },
+        "availableGraphs": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#availableGraphs",
+            "@type": "@id"
+        },
+        "resultFormat": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#resultFormat",
+            "@type": "@id"
+        },
+        "feature": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#feature",
+            "@type": "@id"
+        },
+        "supportedLanguage": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#supportedLanguage",
+            "@type": "@id"
+        },
+        "url": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#url",
+            "@type": "@id"
+        },
+        "comment": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#comment",
+            "@language": "nl"
+        },
+        "defaultDataset": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#defaultDataset",
+            "@type": "@id"
+        },
+        "endpoint": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#endpoint",
+            "@type": "@id"
+        },
+        "namedGraph": {
+            "@id": "http://www.w3.org/ns/sparql-service-description#namedGraph",
+            "@type": "@id"
+        },
+        "homepage": {
+            "@id": "http://xmlns.com/foaf/0.1/homepage",
+            "@type": "@id"
+        },
+        "service": {
+            "@id": "http://www.w3.org/ns/dcat#service",
+            "@type": "@id"
+        },
+        "rootResource": {
+            "@id": "http://rdfs.org/ns/void#rootResource",
+            "@type": "@id"
+        },
+        "dataset": {
+            "@id": "http://www.w3.org/ns/dcat#dataset",
+            "@type": "@id"
+        },
+        "servesDataset": {
+            "@id": "http://www.w3.org/ns/dcat#servesDataset",
+            "@type": "@id"
+        },
+        "endpointDescription": {
+            "@id": "http://www.w3.org/ns/dcat#endpointDescription",
+            "@type": "@id"
+        },
+        "endpointURL": {
+            "@id": "http://www.w3.org/ns/dcat#endpointURL",
+            "@type": "@id"
+        },
+        "conformsTo": {
+            "@id": "http://purl.org/dc/terms/conformsTo",
+            "@type": "@id"
+        },
+        "dc.identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        },
+        "dc.language": {
+            "@id": "http://purl.org/dc/elements/1.1/language",
+            "@language": "nl"
+        },
+        "dc.source": {
+            "@id": "http://purl.org/dc/elements/1.1/source"
+        },
+        "version": {
+            "@id": "http://www.w3.org/2002/07/owl#versionInfo"
+        },
+        "name": {
+            "@id": "http://spdx.org/rdf/terms#name"
+        },
+        "seeAlso": {
+            "@id": "http://www.w3.org/2000/01/rdf-schema#seeAlso",
+            "@type": "@id"
+        },
+        "inScheme": {
+            "@id": "http://www.w3.org/2004/02/skos/core#inScheme",
+            "@type": "@id"
+        },
+        "topConceptOf": {
+            "@id": "http://www.w3.org/2004/02/skos/core#topConceptOf",
+            "@type": "@id"
+        },
+        "hasTopConcept": {
+            "@id": "http://www.w3.org/2004/02/skos/core#hasTopConcept",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "uri": {
+            "@id": "@id",
+            "@type": "@id"
+        },
+        "prefLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#prefLabel",
+            "@language": "nl"
+        },
+        "notation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#notation"
+        },
+        "altLabel": {
+            "@id": "http://www.w3.org/2004/02/skos/core#altLabel",
+            "@language": "nl"
+        },
+        "note": {
+            "@id": "http://www.w3.org/2004/02/skos/core#note",
+            "@language": "nl"
+        },
+        "definition": {
+            "@id": "http://www.w3.org/2004/02/skos/core#definition",
+            "@language": "nl"
+        },
+        "member": {
+            "@id": "http://www.w3.org/2004/02/skos/core#member",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "references": {
+            "@id": "http://purl.org/dc/terms/references",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "isReferencedBy": {
+            "@id": "http://purl.org/dc/terms/isReferencedBy",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "relation": {
+            "@id": "http://purl.org/dc/terms/relation",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "graph": {
+            "@id": "@graph"
+        },
+        "broaderTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broaderTransitive",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "broadMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broadMatch",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "closeMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#closeMatch",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "memberOf": {
+            "@id": "https://data.omgeving.vlaanderen.be/ns/algemeen#memberOf",
+            "@type": "@id"
+        },
+        "exactMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#exactMatch",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "mappingRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#mappingRelation",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "broader": {
+            "@id": "http://www.w3.org/2004/02/skos/core#broader",
+            "@type": "@id"
+        },
+        "narrower": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrower",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "narrowerTransitive": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowerTransitive",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "narrowMatch": {
+            "@id": "http://www.w3.org/2004/02/skos/core#narrowMatch",
+            "@type": "@id"
+        },
+        "semanticRelation": {
+            "@id": "http://www.w3.org/2004/02/skos/core#semanticRelation",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "belongsTo": {
+            "@id": "http://rdf-vocabulary.ddialliance.org/xkos#belongsTo",
+            "@type": "@id"
+        },
+        "related": {
+            "@id": "http://www.w3.org/2004/02/skos/core#related",
+            "@type": "@id",
+            "@container": "@set"
+        },
+        "dc_elements_identifier": {
+            "@id": "http://purl.org/dc/elements/1.1/identifier"
+        }
+    },
+    "graph": [
+        {
+            "id": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing",
+            "type": "http://www.w3.org/2004/02/skos/core#Collection",
+            "definition": "het vertonen van uitgesproken gebreken van algemene of beperkte omvang aan het bedrijfsgebouw. De Vlaamse regering bepaalt de gebreken van algemene en beperkte omvang, alsook de criteria voor de beoordeling van de gebreken en de minimumnorm van de te vertonen gebreken om een bedrijfsruimte al dan niet als geheel of gedeeltelijk verwaarloosd te beschouwen;",
+            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "member": [
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid",
+                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing"
+            ],
+            "notation": "co_verwaarlozing",
+            "note": "het vertonen van uitgesproken gebreken van algemene of beperkte omvang aan het bedrijfsgebouw. De Vlaamse regering bepaalt de gebreken van algemene en beperkte omvang, alsook de criteria voor de beoordeling van de gebreken en de minimumnorm van de te vertonen gebreken om een bedrijfsruimte al dan niet als geheel of gedeeltelijk verwaarloosd te beschouwen;",
+            "prefLabel": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand.",
+            "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+        },
+        {
+            "id": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+            "type": "http://www.w3.org/2004/02/skos/core#ConceptScheme",
+            "belongsTo": "https://data.omgeving.vlaanderen.be/id/dataset/codelijst-gebouw",
+            "definition": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen.",
+            "hasTopConcept": [
+                {
+                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                    "closeMatch": [
+                        "http://www.eionet.europa.eu/gemet/concept/1029",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                    ],
+                    "definition": "Iets gebouwd met een dak en muren, zoals een huis of fabriek.",
+                    "exactMatch": [
+                        "http://www.eionet.europa.eu/gemet/concept/1029",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                    ],
+                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                    "mappingRelation": [
+                        "http://www.eionet.europa.eu/gemet/concept/1029",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                    ],
+                    "narrower": [
+                        {
+                            "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                            "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                            "broaderTransitive": [
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                            ],
+                            "definition": "Problemen met het gebouw/de gebouwen omwille van verwaarlozing. Deze hebben een globale impact op het gebouw.",
+                            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                            "narrower": [
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                                    ],
+                                    "definition": "De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken. Wanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, eigen gewicht, trillingen, bevingen).",
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "notation": "stabiliteit",
+                                    "note": "De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken. Wanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, eigen gewicht, trillingen, bevingen).",
+                                    "prefLabel": "stabiliteit",
+                                    "semanticRelation": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                },
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                                    ],
+                                    "definition": "Constructieve veiligheid is een belangrijk onderdeel van een bouwwerk. De kwaliteit van een constructie bepaalt een gebouw of kunstwerk voldoende sterk en stabiel blijft bij intensief gebruik en bij extreme situaties.",
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "notation": "veiligheid",
+                                    "note": "Constructieve veiligheid is een belangrijk onderdeel van een bouwwerk. De kwaliteit van een constructie bepaalt een gebouw of kunstwerk voldoende sterk en stabiel blijft bij intensief gebruik en bij extreme situaties.",
+                                    "prefLabel": "veiligheid",
+                                    "semanticRelation": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                },
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                                    ],
+                                    "definition": "Vochtproblemen ontstaan door opstijgend vocht, condensatie of lekkages en leiden tot schimmel, geurhinder en structurele schade. Veelvoorkomende oorzaken zijn slechte ventilatie, poreuze muren of waterinfiltratie.",
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "notation": "vochtindringing",
+                                    "note": "Vochtproblemen ontstaan door opstijgend vocht, condensatie of lekkages en leiden tot schimmel, geurhinder en structurele schade. Veelvoorkomende oorzaken zijn slechte ventilatie, poreuze muren of waterinfiltratie.",
+                                    "prefLabel": "vochtindringing",
+                                    "semanticRelation": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                }
+                            ],
+                            "narrowerTransitive": [
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing"
+                            ],
+                            "notation": "algemene kenmerken",
+                            "note": "Problemen met het gebouw/de gebouwen omwille van verwaarlozing. Deze hebben een globale impact op het gebouw.",
+                            "prefLabel": "algemene kenmerken",
+                            "semanticRelation": [
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing"
+                            ]
+                        },
+                        {
+                            "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                            "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                            "broaderTransitive": [
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
+                            ],
+                            "closeMatch": [
+                                "http://www.eionet.europa.eu/gemet/concept/1033",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                            ],
+                            "definition": "Een bouwelement dat gebruik maakt van industriële producten die als onafhankelijk worden vervaardigd totdat ze kunnen worden verbonden met andere elementen.",
+                            "exactMatch": [
+                                "http://www.eionet.europa.eu/gemet/concept/1033",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                            ],
+                            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                            "mappingRelation": [
+                                "http://www.eionet.europa.eu/gemet/concept/1033",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                            ],
+                            "narrower": [
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "definition": "Al het timmerwerk dat plaats vindt aan de buitenkant van de woning.",
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "notation": "buitentimmerwerk",
+                                    "note": "Al het timmerwerk dat plaats vindt aan de buitenkant van de woning.",
+                                    "prefLabel": "buitentimmerwerk",
+                                    "semanticRelation": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                },
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "definition": "Bovenafsluiting van een gebouw.",
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "narrower": [
+                                        {
+                                            "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                                            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                            "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                            "broaderTransitive": [
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                            ],
+                                            "definition": "Dakbedekking of dakbekleding is een beschermende laag die op een plat of hellend dak wordt aangebracht, om dit waterdicht, sneeuwdicht en tochtvrij te maken.  Het materiaal moet onbrandbaar, weersbestendig en het liefst licht van gewicht zijn.",
+                                            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                            "notation": "dakbedekking",
+                                            "note": "Dakbedekking of dakbekleding is een beschermende laag die op een plat of hellend dak wordt aangebracht, om dit waterdicht, sneeuwdicht en tochtvrij te maken.  Het materiaal moet onbrandbaar, weersbestendig en het liefst licht van gewicht zijn.",
+                                            "prefLabel": "dakbedekking",
+                                            "semanticRelation": [
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                            ],
+                                            "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                            "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                        },
+                                        {
+                                            "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                                            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                            "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                            "broaderTransitive": [
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                            ],
+                                            "definition": "Een dakconstructie van verschillende homogene materialen (hout, metaal of beton) en is een van de hoofddelen van een gebouw die zorgt voor structurele stabiliteit.",
+                                            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                            "notation": "dakgebinte",
+                                            "note": "Een dakconstructie van verschillende homogene materialen (hout, metaal of beton) en is een van de hoofddelen van een gebouw die zorgt voor structurele stabiliteit.",
+                                            "prefLabel": "dakgebinte",
+                                            "semanticRelation": [
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                            ],
+                                            "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                            "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                        },
+                                        {
+                                            "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+                                            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                            "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                            "broaderTransitive": [
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                            ],
+                                            "definition": "Een dakgoot of goot is een langgerekte bakvormige (bakgoot) of halfronde (mastgoot) constructie, die tot doel heeft, het van het dak komende regen- en smeltwater op te vangen en af te voeren",
+                                            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                            "notation": "dakgoot",
+                                            "note": "Een dakgoot of goot is een langgerekte bakvormige (bakgoot) of halfronde (mastgoot) constructie, die tot doel heeft, het van het dak komende regen- en smeltwater op te vangen en af te voeren",
+                                            "prefLabel": "dakgoot",
+                                            "semanticRelation": [
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                            ],
+                                            "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                            "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                        }
+                                    ],
+                                    "narrowerTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot"
+                                    ],
+                                    "notation": "dak",
+                                    "note": "Bovenafsluiting van een gebouw.",
+                                    "prefLabel": "dak",
+                                    "semanticRelation": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                                },
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "definition": "Een kroonlijst of deklijst is een horizontale band aan een bouwwerk, meestal uitspringend en geprofileerd of van versieringen voorzien. Ze verfraaien de verbinding tussen bijvoorbeeld wand en plafond",
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "notation": "kroonlijst",
+                                    "note": "Een kroonlijst of deklijst is een horizontale band aan een bouwwerk, meestal uitspringend en geprofileerd of van versieringen voorzien. Ze verfraaien de verbinding tussen bijvoorbeeld wand en plafond",
+                                    "prefLabel": "kroonlijst",
+                                    "semanticRelation": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                },
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "definition": "hijstoestel om voorwerpen of personen van de ene verdieping van een gebouw naar een andere te vervoeren",
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "notation": "lift",
+                                    "note": "hijstoestel om voorwerpen of personen van de ene verdieping van een gebouw naar een andere te vervoeren",
+                                    "prefLabel": "lift",
+                                    "semanticRelation": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                },
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "closeMatch": [
+                                        "http://www.eionet.europa.eu/gemet/concept/9023",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur"
+                                    ],
+                                    "definition": "Een verticale constructie gemaakt van steen, baksteen, hout, enz., met een lengte en hoogte die veel groter zijn dan de dikte, die wordt gebruikt om te omsluiten, te verdelen of te ondersteunen.",
+                                    "exactMatch": [
+                                        "http://www.eionet.europa.eu/gemet/concept/9023",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur"
+                                    ],
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "mappingRelation": [
+                                        "http://www.eionet.europa.eu/gemet/concept/9023",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur"
+                                    ],
+                                    "narrower": [
+                                        {
+                                            "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+                                            "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                            "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur",
+                                            "broaderTransitive": [
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur"
+                                            ],
+                                            "definition": "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal",
+                                            "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                            "notation": "buitenmuur",
+                                            "note": "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal",
+                                            "prefLabel": "buitenmuur",
+                                            "semanticRelation": [
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur"
+                                            ],
+                                            "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                            "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                        }
+                                    ],
+                                    "narrowerTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur"
+                                    ],
+                                    "notation": "muur",
+                                    "note": "Een verticale constructie gemaakt van steen, baksteen, hout, enz., met een lengte en hoogte die veel groter zijn dan de dikte, die wordt gebruikt om te omsluiten, te verdelen of te ondersteunen.",
+                                    "prefLabel": "muur",
+                                    "semanticRelation": [
+                                        "http://www.eionet.europa.eu/gemet/concept/9023",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                                },
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "closeMatch": [
+                                        "http://www.eionet.europa.eu/gemet/concept/1355",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen"
+                                    ],
+                                    "definition": "Een verticale structuur van baksteen, metselwerk of staal die rook of stoom wegvoert van een brand, motor, enz.",
+                                    "exactMatch": [
+                                        "http://www.eionet.europa.eu/gemet/concept/1355",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen"
+                                    ],
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "mappingRelation": [
+                                        "http://www.eionet.europa.eu/gemet/concept/1355",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen"
+                                    ],
+                                    "notation": "schoorsteen",
+                                    "note": "Een verticale structuur van baksteen, metselwerk of staal die rook of stoom wegvoert van een brand, motor, enz.",
+                                    "prefLabel": "schoorsteen",
+                                    "semanticRelation": [
+                                        "http://www.eionet.europa.eu/gemet/concept/1355",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                },
+                                {
+                                    "id": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap",
+                                    "type": "http://www.w3.org/2004/02/skos/core#Concept",
+                                    "broader": "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                    "broaderTransitive": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "definition": "Een opeenvolging van treden of meerdere reeksen treden verbonden door middel van overlopen, bedoeld om van de ene verdieping naar de andere te komen",
+                                    "inScheme": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                                    "notation": "trap",
+                                    "note": "Een opeenvolging van treden of meerdere reeksen treden verbonden door middel van overlopen, bedoeld om van de ene verdieping naar de andere te komen",
+                                    "prefLabel": "trap",
+                                    "semanticRelation": [
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel"
+                                    ],
+                                    "theme": "http://www.eionet.europa.eu/gemet/theme/5",
+                                    "memberOf": "https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing"
+                                }
+                            ],
+                            "narrowerTransitive": [
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap"
+                            ],
+                            "notation": "gebouwonderdeel",
+                            "note": "Een bouwelement dat gebruik maakt van industriële producten die als onafhankelijk worden vervaardigd totdat ze kunnen worden verbonden met andere elementen.",
+                            "prefLabel": "gebouwonderdeel",
+                            "semanticRelation": [
+                                "http://www.eionet.europa.eu/gemet/concept/1033",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
+                                "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap"
+                            ]
+                        }
+                    ],
+                    "narrowerTransitive": [
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing"
+                    ],
+                    "notation": "gebouw",
+                    "note": "Iets gebouwd met een dak en muren, zoals een huis of fabriek.",
+                    "prefLabel": "gebouw",
+                    "semanticRelation": [
+                        "http://www.eionet.europa.eu/gemet/concept/1029",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid",
+                        "https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing"
+                    ],
+                    "topConceptOf": "https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw",
+                    "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+                }
+            ],
+            "notation": "cs_gebouw",
+            "note": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen.",
+            "prefLabel": "Codelijst bouw",
+            "theme": "http://www.eionet.europa.eu/gemet/theme/5"
+        }
+    ]
+}

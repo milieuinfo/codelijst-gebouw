@@ -5,7 +5,7 @@
 @prefix skos: <http://www.w3.org/2004/02/skos/core#>.
 @prefix func: <http://www.w3.org/2007/rif-builtin-function#>.
 @prefix dce:  <http://purl.org/dc/elements/1.1/>.
-
+@prefix a:  <https://data.omgeving.vlaanderen.be/ns/algemeen#>.
 
 
 
@@ -16,3 +16,4 @@
 { ?x skos:narrower ?y } => { ?y skos:broader  ?x }.
 { ?x skos:narrower ?y } => { ?x skos:narrowerTransitive ?y }.
 { ?x skos:broaderTransitive  ?y. ?y skos:broaderTransitive  ?z } => { ?x skos:broaderTransitive  ?z }.
+{ ?x skos:member ?y } => { ?y a:memberOf ?x } .

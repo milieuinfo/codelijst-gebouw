@@ -310,6 +310,10 @@
     "@type" : "@id",
     "@container": "@set"
   },
+  "memberOf": {
+    "@id": "https://data.omgeving.vlaanderen.be/ns/algemeen#memberOf",
+    "@type": "@id"
+  },
   "exactMatch" : {
     "@id" : "http://www.w3.org/2004/02/skos/core#exactMatch",
     "@type" : "@id",
