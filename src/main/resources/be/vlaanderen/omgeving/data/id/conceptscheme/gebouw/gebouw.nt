@@ -49,7 +49,7 @@
 <https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing> <http://www.w3.org/2004/02/skos/core#member> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> .
 <https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing> <http://www.w3.org/2004/02/skos/core#member> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> .
 <https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing> <http://www.w3.org/2004/02/skos/core#member> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> .
-<https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing> <http://www.w3.org/2004/02/skos/core#notation> "co_verwaarlozing" .
+<https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing> <http://www.w3.org/2004/02/skos/core#notation> "CO_VERWAARLOZING" .
 <https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing> <http://www.w3.org/2004/02/skos/core#note> "het vertonen van uitgesproken gebreken van algemene of beperkte omvang aan het bedrijfsgebouw. De Vlaamse regering bepaalt de gebreken van algemene en beperkte omvang, alsook de criteria voor de beoordeling van de gebreken en de minimumnorm van de te vertonen gebreken om een bedrijfsruimte al dan niet als geheel of gedeeltelijk verwaarloosd te beschouwen;"@nl .
 <https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand."@nl .
 <https://data.omgeving.vlaanderen.be/id/collection/gebouw/verwaarlozing> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
@@ -375,7 +375,7 @@
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/1999/02/22-rdf-syntax-ns#type> <http://www.w3.org/2004/02/skos/core#ConceptScheme> .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#definition> "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."@nl .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#hasTopConcept> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#notation> "cs_gebouw" .
+<https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#notation> "CS_GEBOUW" .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#note> "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."@nl .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/2004/02/skos/core#prefLabel> "Codelijst bouw"@nl .
 <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
