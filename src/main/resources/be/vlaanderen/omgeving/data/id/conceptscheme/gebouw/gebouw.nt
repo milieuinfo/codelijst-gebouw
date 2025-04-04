@@ -64,9 +64,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#notation> "algemene kenmerken" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#notation> "ALGEMENE_KENMERKEN" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#note> "Problemen met het gebouw/de gebouwen omwille van verwaarlozing. Deze hebben een globale impact op het gebouw."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#prefLabel> "algemene kenmerken"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#prefLabel> "Algemene kenmerken"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> .
@@ -78,9 +78,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#definition> "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#notation> "buitenmuur" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#notation> "BUITENMUUR" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#note> "Een buitenmuur is de muur aan de buitenkant van een gebouw. Het is het van buitenaf zichtbare deel van de muur en heeft als voornaamste functie bescherming tegen de elementen, zoals regen, wind en zon. De buitenmuur kan gemaakt zijn van baksteen, beton, natuursteen of metaal"@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#prefLabel> "buitenmuur"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#prefLabel> "Buitenmuur"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> .
@@ -91,9 +91,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#definition> "Al het timmerwerk dat plaats vindt aan de buitenkant van de woning."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#notation> "buitentimmerwerk" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#notation> "BUITENTIMMERWERK" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#note> "Al het timmerwerk dat plaats vindt aan de buitenkant van de woning."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#prefLabel> "buitentimmerwerk"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#prefLabel> "Buitentimmerwerk"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
@@ -109,9 +109,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#notation> "dak" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#notation> "DAK" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#note> "Bovenafsluiting van een gebouw."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#prefLabel> "dak"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dak"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> .
@@ -125,9 +125,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#definition> "Dakbedekking of dakbekleding is een beschermende laag die op een plat of hellend dak wordt aangebracht, om dit waterdicht, sneeuwdicht en tochtvrij te maken.  Het materiaal moet onbrandbaar, weersbestendig en het liefst licht van gewicht zijn."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#notation> "dakbedekking" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#notation> "DAKBEDEKKING" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#note> "Dakbedekking of dakbekleding is een beschermende laag die op een plat of hellend dak wordt aangebracht, om dit waterdicht, sneeuwdicht en tochtvrij te maken.  Het materiaal moet onbrandbaar, weersbestendig en het liefst licht van gewicht zijn."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#prefLabel> "dakbedekking"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dakbedekking"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakbedekking> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
@@ -139,9 +139,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#definition> "Een dakconstructie van verschillende homogene materialen (hout, metaal of beton) en is een van de hoofddelen van een gebouw die zorgt voor structurele stabiliteit."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#notation> "dakgebinte" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#notation> "DAKGEBINTE" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#note> "Een dakconstructie van verschillende homogene materialen (hout, metaal of beton) en is een van de hoofddelen van een gebouw die zorgt voor structurele stabiliteit."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#prefLabel> "dakgebinte"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dakgebinte"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgebinte> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
@@ -153,9 +153,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#definition> "Een dakgoot of goot is een langgerekte bakvormige (bakgoot) of halfronde (mastgoot) constructie, die tot doel heeft, het van het dak komende regen- en smeltwater op te vangen en af te voeren"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#notation> "dakgoot" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#notation> "DAKGOOT" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#note> "Een dakgoot of goot is een langgerekte bakvormige (bakgoot) of halfronde (mastgoot) constructie, die tot doel heeft, het van het dak komende regen- en smeltwater op te vangen en af te voeren"@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#prefLabel> "dakgoot"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#prefLabel> "Dakgoot"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dak> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/dakgoot> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
@@ -187,9 +187,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#notation> "gebouw" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#notation> "GEBOUW" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#note> "Iets gebouwd met een dak en muren, zoals een huis of fabriek."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#prefLabel> "gebouw"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gebouw"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#semanticRelation> <http://www.eionet.europa.eu/gemet/concept/1029> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> .
@@ -239,9 +239,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#notation> "gebouwonderdeel" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#notation> "GEBOUWONDERDEEL" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#note> "Een bouwelement dat gebruik maakt van industriële producten die als onafhankelijk worden vervaardigd totdat ze kunnen worden verbonden met andere elementen."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#prefLabel> "gebouwonderdeel"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#prefLabel> "Gebouwonderdeel"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#semanticRelation> <http://www.eionet.europa.eu/gemet/concept/1033> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitentimmerwerk> .
@@ -262,9 +262,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#definition> "Een kroonlijst of deklijst is een horizontale band aan een bouwwerk, meestal uitspringend en geprofileerd of van versieringen voorzien. Ze verfraaien de verbinding tussen bijvoorbeeld wand en plafond"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#notation> "kroonlijst" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#notation> "KROONLIJST" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#note> "Een kroonlijst of deklijst is een horizontale band aan een bouwwerk, meestal uitspringend en geprofileerd of van versieringen voorzien. Ze verfraaien de verbinding tussen bijvoorbeeld wand en plafond"@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#prefLabel> "kroonlijst"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#prefLabel> "Kroonlijst"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/kroonlijst> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
@@ -274,9 +274,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#definition> "hijstoestel om voorwerpen of personen van de ene verdieping van een gebouw naar een andere te vervoeren"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#notation> "lift" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#notation> "LIFT" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#note> "hijstoestel om voorwerpen of personen van de ene verdieping van een gebouw naar een andere te vervoeren"@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#prefLabel> "lift"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#prefLabel> "Lift"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/lift> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
@@ -294,9 +294,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#mappingRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#narrower> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#narrowerTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#notation> "muur" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#notation> "MUUR" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#note> "Een verticale constructie gemaakt van steen, baksteen, hout, enz., met een lengte en hoogte die veel groter zijn dan de dikte, die wordt gebruikt om te omsluiten, te verdelen of te ondersteunen."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#prefLabel> "muur"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#prefLabel> "Muur"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#semanticRelation> <http://www.eionet.europa.eu/gemet/concept/9023> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/buitenmuur> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/muur> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
@@ -315,9 +315,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#mappingRelation> <http://www.eionet.europa.eu/gemet/concept/1355> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#mappingRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#notation> "schoorsteen" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#notation> "SCHOORSTEEN" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#note> "Een verticale structuur van baksteen, metselwerk of staal die rook of stoom wegvoert van een brand, motor, enz."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#prefLabel> "schoorsteen"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#prefLabel> "Schoorsteen"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#semanticRelation> <http://www.eionet.europa.eu/gemet/concept/1355> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/schoorsteen> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
@@ -329,9 +329,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#definition> "De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken. Wanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, eigen gewicht, trillingen, bevingen)."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#notation> "stabiliteit" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#notation> "STABILITEIT" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#note> "De stabiliteit van een constructie heeft vooral betrekking op de weerstand tegen horizontale krachten waardoor constructie-onderdelen van elkaar los kunnen raken. Wanneer een gebouw niet voldoende stabiliteit heeft, kan het bezwijken onder de op het gebouw uitgevoerde belastingen (bijvoorbeeld windbelasting, eigen gewicht, trillingen, bevingen)."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#prefLabel> "stabiliteit"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#prefLabel> "Stabiliteit"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/stabiliteit> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
@@ -341,9 +341,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#definition> "Een opeenvolging van treden of meerdere reeksen treden verbonden door middel van overlopen, bedoeld om van de ene verdieping naar de andere te komen"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#notation> "trap" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#notation> "TRAP" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#note> "Een opeenvolging van treden of meerdere reeksen treden verbonden door middel van overlopen, bedoeld om van de ene verdieping naar de andere te komen"@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#prefLabel> "trap"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#prefLabel> "Trap"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouwonderdeel> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/trap> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
@@ -353,9 +353,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#definition> "Constructieve veiligheid is een belangrijk onderdeel van een bouwwerk. De kwaliteit van een constructie bepaalt een gebouw of kunstwerk voldoende sterk en stabiel blijft bij intensief gebruik en bij extreme situaties."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#notation> "veiligheid" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#notation> "VEILIGHEID" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#note> "Constructieve veiligheid is een belangrijk onderdeel van een bouwwerk. De kwaliteit van een constructie bepaalt een gebouw of kunstwerk voldoende sterk en stabiel blijft bij intensief gebruik en bij extreme situaties."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#prefLabel> "veiligheid"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#prefLabel> "Veiligheid"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/veiligheid> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
@@ -365,9 +365,9 @@
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#broaderTransitive> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#definition> "Vochtproblemen ontstaan door opstijgend vocht, condensatie of lekkages en leiden tot schimmel, geurhinder en structurele schade. Veelvoorkomende oorzaken zijn slechte ventilatie, poreuze muren of waterinfiltratie."@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#inScheme> <https://data.omgeving.vlaanderen.be/id/conceptscheme/gebouw> .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#notation> "vochtindringing" .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#notation> "VOCHTINDRINGING" .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#note> "Vochtproblemen ontstaan door opstijgend vocht, condensatie of lekkages en leiden tot schimmel, geurhinder en structurele schade. Veelvoorkomende oorzaken zijn slechte ventilatie, poreuze muren of waterinfiltratie."@nl .
-<https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#prefLabel> "vochtindringing"@nl .
+<https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#prefLabel> "Vochtindringing"@nl .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/algemene_kenmerken> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/2004/02/skos/core#semanticRelation> <https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw> .
 <https://data.omgeving.vlaanderen.be/id/concept/gebouw/vochtindringing> <http://www.w3.org/ns/dcat#theme> <http://www.eionet.europa.eu/gemet/theme/5> .
