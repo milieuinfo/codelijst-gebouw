@@ -697,7 +697,7 @@
                     "theme": "http://www.eionet.europa.eu/gemet/theme/5"
                 }
             ],
-            "notation": "co_verwaarlozing",
+            "notation": "CO_VERWAARLOZING",
             "note": "het vertonen van uitgesproken gebreken van algemene of beperkte omvang aan het bedrijfsgebouw. De Vlaamse regering bepaalt de gebreken van algemene en beperkte omvang, alsook de criteria voor de beoordeling van de gebreken en de minimumnorm van de te vertonen gebreken om een bedrijfsruimte al dan niet als geheel of gedeeltelijk verwaarloosd te beschouwen;",
             "prefLabel": "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand.",
             "theme": "http://www.eionet.europa.eu/gemet/theme/5"
@@ -1189,7 +1189,7 @@
             "hasTopConcept": [
                 "https://data.omgeving.vlaanderen.be/id/concept/gebouw/gebouw"
             ],
-            "notation": "cs_gebouw",
+            "notation": "CS_GEBOUW",
             "note": "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen.",
             "prefLabel": "Codelijst bouw",
             "theme": "http://www.eionet.europa.eu/gemet/theme/5"

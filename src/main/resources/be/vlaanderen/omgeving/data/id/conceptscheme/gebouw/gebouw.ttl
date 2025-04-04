@@ -82,7 +82,7 @@ collectie:verwaarlozing a skos:Collection;
     skos:definition "het vertonen van uitgesproken gebreken van algemene of beperkte omvang aan het bedrijfsgebouw. De Vlaamse regering bepaalt de gebreken van algemene en beperkte omvang, alsook de criteria voor de beoordeling van de gebreken en de minimumnorm van de te vertonen gebreken om een bedrijfsruimte al dan niet als geheel of gedeeltelijk verwaarloosd te beschouwen;"@nl;
     skos:inScheme conceptscheme:gebouw;
     skos:member gebouw:buitenmuur, gebouw:buitentimmerwerk, gebouw:dakbedekking, gebouw:dakgebinte, gebouw:dakgoot, gebouw:kroonlijst, gebouw:lift, gebouw:schoorsteen, gebouw:stabiliteit, gebouw:trap, gebouw:veiligheid, gebouw:vochtindringing;
-    skos:notation "co_verwaarlozing";
+    skos:notation "CO_VERWAARLOZING";
     skos:note "het vertonen van uitgesproken gebreken van algemene of beperkte omvang aan het bedrijfsgebouw. De Vlaamse regering bepaalt de gebreken van algemene en beperkte omvang, alsook de criteria voor de beoordeling van de gebreken en de minimumnorm van de te vertonen gebreken om een bedrijfsruimte al dan niet als geheel of gedeeltelijk verwaarloosd te beschouwen;"@nl;
     skos:prefLabel "Collectie van concepten die gebruikt worden binnen de applicatie verwaarlozing en leegstand."@nl;
     dcat:theme <http://www.eionet.europa.eu/gemet/theme/5>.
@@ -279,7 +279,7 @@ conceptscheme:gebouw xkos:belongsTo omg_dataset:codelijst-gebouw;
     a skos:ConceptScheme;
     skos:definition "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."@nl;
     skos:hasTopConcept gebouw:gebouw;
-    skos:notation "cs_gebouw";
+    skos:notation "CS_GEBOUW";
     skos:note "Codelijst over concepten die verband houden met de bouwsector, constructies, gebouw en onderdelen van gebouwen."@nl;
     skos:prefLabel "Codelijst bouw"@nl;
     dcat:theme <http://www.eionet.europa.eu/gemet/theme/5>.
